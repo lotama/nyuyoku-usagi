@@ -15,7 +15,7 @@
     <div class="header-logo">🐰入浴うさぎ🐰</div>
     <div class="header-list">
       <ul>
-        <li>🛁入浴うさぎ🛁</li>
+        <li>🛁浴室について🛁</li>
         <li>🌷patio🌷</li>
         <li>🎧ディジェイ🎧</li>
         <li>🎮げーむ🎮</li>
@@ -31,12 +31,19 @@
   
   <div class="geme-text">
     <h2>入浴うさぎ</h2>
-    <p>えーん</p>
+    <p>こんにちは、<span id="name"></span>さん</p>
   </div>
 
   <div class="geme">
 
   </div>
+  <script>
+    window.onload = function(){
+    document.getElementById('name').innerHTML = document.cookie
+// ページ読み込み時に実行したい処理
+}
 
+  </script>
+  
 </body>
 </html>

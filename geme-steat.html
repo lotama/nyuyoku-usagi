@@ -15,7 +15,7 @@
     <div class="header-logo">🐰入浴うさぎ🐰</div>
     <div class="header-list">
       <ul>
-        <li>🛁入浴うさぎ🛁</li>
+        <li>🛁🛁</li>
         <li>🌷patio🌷</li>
         <li>🎧ディジェイ🎧</li>
         <li>🎮げーむ🎮</li>
@@ -24,4 +24,23 @@
     </div>
   </div>
 
+  <div class="geme-main">
+    <img src="83783.jpg">
+  </div>
   
+  <p>お名前を教えてね</p>
+  <textarea id="name"></textarea>
+  <button onclick="buttonClick()">だよ</button>
+  <script>
+    function buttonClick(){
+    let name = document.getElementById('name').value;
+    
+    if(name === "") {
+    name = "ポワポワ"
+    }
+    document.cookie =name
+    window.location.href = 'geme.html';
+}
+  </script>
+</body>
+</html>
