@@ -1,7 +1,6 @@
 body {
   font-family: "Avenir Next";
   background-color: #e3f9ff;
-  margin: 0;
 }
 
 li {
@@ -27,8 +26,24 @@ li {
   padding: 33px 20px 0px 0px;
 }
 
+.geme-main{
+  padding: 0;
+}
+
 .geme-main img{
   width: 450px;
-  padding: 20px 0px 0px 0px;
+  padding-top: 10px;
+  float: left;
+}
+
+.geme-logo img{
+  width: 450px;
+  padding-top: 10px;
+}
+
+.geme-text{
+  background-color: #b8b8ff;
+  width: 449px;
+  height: 189px;
   float: left;
 }
