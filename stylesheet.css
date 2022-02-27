@@ -1,29 +1,35 @@
 body {
   font-family: "Avenir Next";
-  background-color: #e3f9ff;
+  background-color: rgb(215, 235, 249);
 }
 
 li {
   list-style: none; 
 }
 
+a{
+  text-decoration: none;
+}
+
 .header {
-  background-color: #d2d2ff;
-  color: #cc2f95;
+  background-color: rgb(255, 209, 238);
+  color: black;
   height: 90px;
-  
+  border: dashed 3px rgb(255, 156, 227);
+  border-radius: 30px
 }
 
 .header-logo {
-  color:#fc81d3;
+  color: black;
   float: left;
   font-size: 36px;
-  padding: 20px 30px 0px 30px;
+  padding: 20px 60px 0px 30px;
 }
 
 .header-list li {
-  float: right;
-  padding: 33px 20px 0px 0px;
+  float: left;
+  padding-left: 20px;
+  padding-top: 33px;
 }
 
 .geme-main{
@@ -47,4 +53,16 @@ li {
   width: 449px;
   height: 195px;
   float: left;
+  position: relative;
+}
+
+.next{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+
+.mix iframe{
+  padding: 30px;
 }
