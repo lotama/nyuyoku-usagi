@@ -18,32 +18,31 @@
         <li><a href="bathroom.html">🛁浴槽🛁</a></li>
         <li><a href="patio.html">🌷patio🌷</a></li>
         <li><a href="dj.html">🎧ディジェイ🎧</a></li>
-        <li><a href="geme-steat.html">🎮げーむ🎮</a></li>
+        <li><a href="game-start.html">🎮げーむ🎮</a></li>
       </ul>
     </div>
   </div>
 
-  <div class="geme-main">
-    <img src="83783.jpg">
+  <div class="game-main">
+    <img src="83691.jpg">
+  </div>
+  <div class="game-logo">
+    <img src="83784.jpg">
   </div>
   
-  <p>お名前を教えてね</p>
-  <textarea id="name"></textarea>
-  <button onclick="buttonClick()">だよ</button>
+  <div class="game-text">
+    <h4>入浴うさぎ</h4>
+    <p>わー！いいね！オールドスクールだいすき！</p>
+    <div class="next">
+      <button><a href="game-3.html">🐰next🐰</a></button>
+    </div>
+  </div>
+
+
   <script>
-    function buttonClick(){
-    let name = document.getElementById('name').value;
-    
-    if(name === "") {
-    name = "ポワポワ"
-    }
-    document.cookie =name
-    window.location.href = 'geme.html';
-}
-  </script>
-
-
+    window.onload = function(){
+    document.getElementById('name').innerHTML = document.cookie
+} </script>
   
 </body>
 </html>
-

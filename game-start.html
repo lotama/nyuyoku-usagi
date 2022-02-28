@@ -23,9 +23,28 @@
     </div>
   </div>
 
-  <iframe width="40%" height="200" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fnyuyou-usagi%2Fusagi-house-20210703%2F" frameborder="0" ></iframe>
+  <div class="game-main">
+    <img src="83783.jpg">
+  </div>
+  
+  <p>お名前を教えてね</p>
+  <textarea id="name"></textarea>
+  <button onclick="buttonClick()">だよ</button>
+
+  <script>
+    function buttonClick(){
+    let name = document.getElementById('name').value;
+    
+    if(name === "") {
+    name = "ポワポワ"
+    }
+    document.cookie =name
+    window.location.href = 'game-1.html';
+}
+  </script>
 
 
   
 </body>
 </html>
+

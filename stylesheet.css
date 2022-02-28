@@ -32,28 +32,43 @@ a{
   padding-top: 33px;
 }
 
-.geme-main{
+.game-main{
   padding: 0;
 }
 
-.geme-main img{
+.game-main img{
   width: 450px;
   padding-top: 10px;
   float: left;
 }
 
-.geme-logo img{
+.game-logo img{
   width: 450px;
   padding-top: 10px;
   vertical-align: bottom;
 }
 
-.geme-text{
+.game-text{
   background-color: rgb(255, 209, 238);
   width: 449px;
   height: 195px;
   float: left;
   position: relative;
+}
+
+.game-text h4{
+  padding-left: 10px;
+}
+
+.game-text p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.game-text h5{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: gray;
 }
 
 .next{
