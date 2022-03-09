@@ -1,6 +1,5 @@
 body {
-  font-family: "Avenir Next";
-  background-color: rgb(215, 235, 249);
+  font-family: 'DotGothic16', sans-serif;
 }
 
 li {
@@ -11,8 +10,15 @@ a{
   text-decoration: none;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 .header {
-  background-color: rgb(255, 209, 238);
+  background-color: rgb(255, 226, 244);
   color: black;
   height: 90px;
   border: dashed 3px rgb(255, 156, 227);
@@ -36,24 +42,42 @@ a{
   padding: 0;
 }
 
+.game-start img{
+  width: 450px;
+  margin-top: 10px;
+  float: left;
+  border: dashed 3px rgb(255, 156, 227);
+  border-radius: 30px;
+}
+
 .game-main img{
   width: 450px;
-  padding-top: 10px;
+  margin-top: 10px;
   float: left;
+  border: dashed 3px rgb(255, 156, 227);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius:30px ;  
 }
 
 .game-logo img{
   width: 450px;
-  padding-top: 10px;
+  margin-top: 10px;
   vertical-align: bottom;
+  border-top: dashed 3px rgb(255, 156, 227);
+  border-right: dashed 3px rgb(255, 156, 227);
+  border-top-right-radius: 30px
 }
 
 .game-text{
   background-color: rgb(255, 209, 238);
   width: 449px;
-  height: 195px;
+  height: 192px;
   float: left;
   position: relative;
+  border-bottom: dashed 3px rgb(255, 156, 227);
+  border-right: dashed 3px rgb(255, 156, 227);
+  border-top:dashed 3px rgb(255, 156, 227) ;
+  border-bottom-right-radius: 30px
 }
 
 .game-text h4{
