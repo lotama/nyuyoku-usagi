@@ -17,25 +17,67 @@ a:active {
   color: inherit;
 }
 
-.header {
-  background-color: rgb(255, 226, 244);
-  color: black;
+
+#header {
   height: 90px;
-  border: dashed 3px rgb(255, 156, 227);
-  border-radius: 30px
+  top: 0%;
+  right: 1%;
+  left: 1%;
+  border:dashed 3px rgb(255, 156, 227);
+  background-color: rgb(255, 226, 244);
+  border-radius: 30px;
 }
 
-.header-logo {
+#header-logo {
   color: black;
   float: left;
   font-size: 36px;
   padding: 20px 60px 0px 30px;
+  position: absolute;
 }
 
-.header-list li {
-  float: left;
-  padding-left: 20px;
-  padding-top: 33px;
+#header-list ul{
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 50px;
+  
+}
+
+#header-list li {
+  display: inline;
+  margin: 10px;
+}
+
+#footer {
+  bottom: 0%;
+  right: 1%;
+  left: 1%;
+  position: absolute;
+  color: black;
+  border:dashed 3px rgb(255, 156, 227);
+  background-color: rgb(255, 226, 244);
+  border-radius: 30px;
+  text-align: center;
+  height: 90px;
+}
+
+  
+
+#footer-logo {
+  margin-top: 20px;
+  align-items: center;
+  font-size: 30px;
+}
+
+#footer-list ul{
+  text-align: right;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+
+#footer-list li {
+  display: inline;
 }
 
 .game-main{
@@ -44,11 +86,12 @@ a:active {
 
 .game-start img{
   width: 450px;
-  margin-top: 10px;
+  margin-top: 3%;
   float: left;
   border: dashed 3px rgb(255, 156, 227);
   border-radius: 30px;
 }
+
 
 .game-main img{
   width: 450px;
@@ -103,5 +146,8 @@ a:active {
 
 
 .mix iframe{
-  padding: 30px;
+ width: 450px;
+ position: relative;
+ top:30px;
+ left: 20px;
 }

@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>
-    <nyuyokuUsagi>
-  </title>
-  <link rel="stylesheet" href="stylesheet.css">
-</head>
 
-<body>
-
-  <div class="header">
-    <div class="header-logo"><a href="index.htm">🐰入浴うさぎ🐰</a></div>
-    <div class="header-list">
-      <ul>
-        <li><a href="bathroom.html">🛁浴槽🛁</a></li>
-        <li><a href="bukking.html">🎂出演🎂</a></li>
-        <li><a href="patio.html">🌷patio🌷</a></li>
-        <li><a href="dj.html">🎧ディジェイ🎧</a></li>
-        <li><a href="game-start.html">🎮げーむ🎮</a></li>
-      </ul>
-    </div>
-  </div>
+  <head>
+    <meta charset="utf-8">
+    <title><nyuyokuUsagi></title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+    $(function() {
+         $("#header").load("header.html");
+         $("#sclasse").load("sclasse.html");
+         $("#footer").load("footer.html");
+  });
+  </script>
+  </head>
+  
+  <body>
+  
+    <div id="header"></div>
 
   <div class="game-main">
     <img src="83690.jpg">
@@ -45,5 +44,7 @@
     document.getElementById('name').innerHTML = document.cookie
 } </script>
   
+  <div id="footer"></div>
+
 </body>
 </html>
