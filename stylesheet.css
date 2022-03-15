@@ -1,15 +1,17 @@
 body {
   font-family: 'DotGothic16', sans-serif;
-  width: 80%;
-  margin: 0 auto;
-  max-width: 500px;
   margin-top: 8%;
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 8%;
 }
+ul {
+  padding-left: 1%;
+  padding-right: 1%;
+}
 
 li {
+  padding-left: 1em;
   list-style: none; 
 }
 
@@ -35,7 +37,7 @@ a:active {
   right: 1%;
   left: 1%;
   border:dashed 3px rgb(255, 156, 227);
-  background-color: rgb(255, 226, 244);
+  background-color: rgb(255, 240, 249);
   border-radius: 30px;
 }
 
@@ -52,50 +54,69 @@ a:active {
   text-align: right;
   margin-top: 50px;
   margin-right: 50px;
-  
 }
 
 #header-list li {
   display: inline;
-  margin: 10px;
 }
 
 #footer {
   position: fixed;
-  height: 60px;
+  padding-top: 0%;
+  height: 50px;
   width: 90%;
   margin: auto;
   bottom: 0%;
   right: 1%;
   left: 1%;
   border:dashed 3px rgb(255, 156, 227);
-  background-color: rgb(255, 226, 244);
+  background-color: rgb(255, 240, 249);
   border-radius: 30px;
 }
-
-  
 
 #footer-logo {
   text-align: center;
   font-size: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 #footer-list ul{
-  text-align: right;
-  margin-right: 20px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto 0;
+  height: 10px;
 }
 
 #footer-list li {
-  display: inline;
+  float: left;
 }
 
-.main img{
-  position: relative;
+.main {
+  text-align: center;
+}
+
+.main img {
   height: 300px;
-  float: left;
+
   border: dashed 3px rgb(255, 156, 227);
   border-radius: 30px;
+}
+
+.news {
+  margin: 1%;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(255, 240, 249);
+  border: dashed 3px rgb(255, 156, 227);
+  border-radius: 30px;
+}
+
+.news h3 {
+  text-align: center;
+  color: rgb(255, 156, 227);
 }
 
 
