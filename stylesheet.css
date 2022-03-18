@@ -1,10 +1,43 @@
+
+/* ------ 泡（大きいマル）のスタイル ------ */
+.bubble{ 
+  position:absolute;
+  background:rgba(255,255,255,0.1);/*泡の色・濃さ*/
+  border:thin solid rgba(255,255,225,0.3);/*線の色・濃さ*/
+  border-radius:8px;/*丸み*/
+  box-shadow: 0 0 1px 1px rgba(255,255,225,0.2);/*泡の光彩（外側）*/
+}
+ 
+/* ------ 光（小さいマル）のスタイル ------ */
+.bubble:after{ 
+  content:"";
+  display:block;
+  height:3px;/*光の高さ*/
+  width:3px;/*光の幅*/
+  border-radius:2px;/*丸み*/
+  background:rgba(255,255,255,0.2) /*光の濃さ*/
+}
+
 body {
   font-family: 'DotGothic16', sans-serif;
   margin-top: 8%;
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 8%;
+  background-image: url(bath3.jpeg);
+  background-position: center center;
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: top 30% center;
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: black
 }
+
 ul {
   padding-left: 1%;
   padding-right: 1%;
@@ -30,6 +63,7 @@ a:active {
 
 
 #header {
+  z-index: 1;
   position: fixed;
   height: 90px;
   width: 90%;
@@ -37,8 +71,7 @@ a:active {
   top: 0%;
   right: 1%;
   left: 1%;
-  border:dashed 3px rgb(255, 156, 227);
-  background-color: rgb(255, 240, 249);
+  background-color: rgba(255, 240, 249, 0.45);
   border-radius: 30px;
 }
 
@@ -62,6 +95,7 @@ a:active {
 }
 
 #footer {
+  z-index: 1;
   position: fixed;
   padding-top: 0%;
   height: 50px;
@@ -70,8 +104,7 @@ a:active {
   bottom: 0%;
   right: 1%;
   left: 1%;
-  border:dashed 3px rgb(255, 156, 227);
-  background-color: rgb(255, 240, 249);
+  background-color: rgba(255, 240, 249, 0.45);
   border-radius: 30px;
 }
 
@@ -101,9 +134,8 @@ a:active {
 }
 
 .main img {
-  height: 300px;
-
-  border: dashed 3px rgb(255, 156, 227);
+  height: 400px;
+  opacity: 0.90;
   border-radius: 30px;
 }
 
@@ -115,42 +147,38 @@ a:active {
   margin: 1%;
   height: 300px;
   width: 300px;
-  background-color: rgb(255, 240, 249);
-  border: dashed 3px rgb(255, 156, 227);
+  background-color: rgba(255, 240, 249, 0.45);
   border-radius: 30px;
 }
 .event h3 {
   text-align: center;
-  color: rgb(255, 156, 227);
 }
 
 .news {
   margin: 1%;
   height: 300px;
   width: 300px;
-  background-color: rgb(255, 240, 249);
-  border: dashed 3px rgb(255, 156, 227);
+  background-color: rgba(255, 240, 249, 0.45);
   border-radius: 30px;
 }
 .news h3 {
   text-align: center;
-  color: rgb(255, 156, 227);
 }
 
 .game-start img{
   width: 450px;
-  border: dashed 3px rgb(255, 156, 227);
   border-radius: 30px;
 }
 
 .game {
   display: flex;
+  opacity: 0.90;
 }
 
 .game-main img{
   position: relative;
   background-color: rgb(255, 209, 238);
-  border: dashed 3px rgb(255, 156, 227);
+  border-right: dashed 3px rgb(255, 156, 227);
   border-top-left-radius: 30px;
   border-bottom-left-radius:30px ;  
   width: 450px;
@@ -160,12 +188,9 @@ a:active {
 
 .game-text{
   position: relative;
-  background-color: rgb(255, 209, 236);
+  background-color: rgb(250, 209, 238);
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
-  border-bottom: dashed 3px rgb(255, 156, 227);
-  border-right: dashed 3px rgb(255, 156, 227);
-  border-top:dashed 3px rgb(255, 156, 227) ;
   width: 450px;
   height: 450px;
 }
@@ -203,6 +228,4 @@ a:active {
 .mix iframe{
  width: 450px;
  position: relative;
- top:30px;
- left: 20px;
 }
