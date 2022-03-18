@@ -11,6 +11,7 @@ ul {
 }
 
 li {
+  margin: 1em 0;
   padding-left: 1em;
   list-style: none; 
 }
@@ -84,7 +85,7 @@ a:active {
 #footer-list ul{
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 2;
   right: 10px;
   margin: auto 0;
   height: 10px;
@@ -92,6 +93,7 @@ a:active {
 
 #footer-list li {
   float: left;
+  padding: 3px;
 }
 
 .main {
@@ -105,6 +107,23 @@ a:active {
   border-radius: 30px;
 }
 
+.contents1 {
+  display: flex;
+}
+
+.event {
+  margin: 1%;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(255, 240, 249);
+  border: dashed 3px rgb(255, 156, 227);
+  border-radius: 30px;
+}
+.event h3 {
+  text-align: center;
+  color: rgb(255, 156, 227);
+}
+
 .news {
   margin: 1%;
   height: 300px;
@@ -113,54 +132,50 @@ a:active {
   border: dashed 3px rgb(255, 156, 227);
   border-radius: 30px;
 }
-
 .news h3 {
   text-align: center;
   color: rgb(255, 156, 227);
 }
 
-
 .game-start img{
   width: 450px;
-  float: left;
   border: dashed 3px rgb(255, 156, 227);
   border-radius: 30px;
 }
 
-.game-start {
-  width: 450px;
-  text-align: center;
+.game {
+  display: flex;
 }
 
-
 .game-main img{
-
-  width: 450px;
+  position: relative;
+  background-color: rgb(255, 209, 238);
   border: dashed 3px rgb(255, 156, 227);
   border-top-left-radius: 30px;
   border-bottom-left-radius:30px ;  
-}
-
-.game-logo img{
-
   width: 450px;
-  vertical-align: bottom;
-  border-top: dashed 3px rgb(255, 156, 227);
-  border-right: dashed 3px rgb(255, 156, 227);
-  border-top-right-radius: 30px
 }
+
 
 
 .game-text{
-  background-color: rgb(255, 209, 238);
-  width: 449px;
-  height: 192px;
-  float: left;
   position: relative;
+  background-color: rgb(255, 209, 236);
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
   border-bottom: dashed 3px rgb(255, 156, 227);
   border-right: dashed 3px rgb(255, 156, 227);
   border-top:dashed 3px rgb(255, 156, 227) ;
-  border-bottom-right-radius: 30px
+  width: 450px;
+  height: 450px;
+}
+
+.game-text img{
+  display: block;
+  border-bottom: dashed 3px rgb(255, 156, 227);
+  border-top-right-radius: 30px;
+  width: 450px;
+  height: 255px;
 }
 
 .game-text h4{
