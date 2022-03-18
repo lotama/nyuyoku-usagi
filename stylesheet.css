@@ -72,7 +72,7 @@ a:active {
 #header {
     z-index: 1;
     position: fixed;
-    height: 10%;
+    height: auto;
     width: 90%;
     margin: auto;
     top: 0.5%;
@@ -82,19 +82,21 @@ a:active {
     border-radius: 30px;
 }
 
+#header-logo h3 {
+    margin-top: 3%;
+}
+
 #header-logo {
-    color: black;
     float: left;
-    font-size: 36px;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 5%;
+    font-size: 2em;
     position: absolute;
 }
 
 #header-list ul {
     text-align: right;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: 5%;
+    margin-right: 5%;
 }
 
 #header-list li {

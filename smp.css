@@ -29,7 +29,7 @@
 
 body {
     font-family: 'DotGothic16', sans-serif;
-    margin-top: 23%;
+    margin-top: 35%;
     max-height: 100%;
     background-image: url(bath3.jpeg);
     background-position: center center;
@@ -82,12 +82,14 @@ a:active {
 #header-logo {
     height: 10%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: auto;
+    margin: 0;
 }
 
 #header-list ul {
+    margin-top: auto;
     text-align: center;
-    font-size: 8px;
+    font-size: 1em;
 }
 
 #header-list li {
@@ -96,6 +98,7 @@ a:active {
 }
 
 #footer {
+    display: none;
     z-index: 1;
     position: relative;
     width: 100%;
@@ -107,6 +110,7 @@ a:active {
 }
 
 #footer-logo {
+    display: none;
     text-align: center;
     font-size: 1em;
 }
