@@ -29,10 +29,8 @@
 
 body {
     font-family: 'DotGothic16', sans-serif;
-    margin-top: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 8%;
+    margin-top: 23%;
+    max-height: 100%;
     background-image: url(bath3.jpeg);
     background-position: center center;
     /* 画像を常に天地左右の中央に配置 */
@@ -72,68 +70,56 @@ a:active {
 #header {
     z-index: 1;
     position: fixed;
-    height: 10%;
-    width: 90%;
-    margin: auto;
-    top: 0.5%;
-    right: 1%;
-    left: 1%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
 }
 
 #header-logo {
-    color: black;
-    float: left;
-    font-size: 36px;
-    margin-top: 20px;
-    margin-left: 50px;
-    position: absolute;
+    height: 10%;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 #header-list ul {
-    text-align: right;
-    margin-top: 50px;
-    margin-right: 50px;
+    text-align: center;
+    font-size: 8px;
 }
 
 #header-list li {
     display: inline;
+    padding: 1%;
 }
 
 #footer {
     z-index: 1;
-    position: fixed;
-    padding-top: 0%;
-    height: 50px;
-    width: 90%;
-    margin: auto;
-    bottom: 0.5%;
-    right: 1%;
-    left: 1%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
 }
 
 #footer-logo {
     text-align: center;
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
+    font-size: 1em;
 }
 
 #footer-list ul {
-    position: absolute;
-    top: 0;
-    bottom: 2;
-    right: 10px;
-    margin: auto 0;
-    height: 10px;
+    margin: 0%;
+    padding: 0%;
 }
 
 #footer-list li {
     float: left;
-    padding: 3px;
+    margin: 0%;
+    padding: 1%;
 }
 
 .main {
@@ -142,21 +128,22 @@ a:active {
 
 .main img {
     padding: 1%;
-    height: 400px;
+    width: 80%;
     opacity: 0.90;
     border-radius: 30px;
 }
 
 .contents1 {
-    display: flex;
+    display: inline-block;
 }
 
 .event {
-    margin: 1%;
-    height: 300px;
-    width: 300px;
+    margin: 2% auto;
+    height: 200px;
+    width: 95%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
+    overflow-y: scroll;
 }
 
 .event h3 {
@@ -164,11 +151,12 @@ a:active {
 }
 
 .news {
-    margin: 1%;
-    height: 300px;
-    width: 300px;
+    margin: 2% auto;
+    height: 200px;
+    width: 95%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
+    overflow-y: scroll;
 }
 
 .news h3 {
