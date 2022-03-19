@@ -2,50 +2,56 @@
 <html>
 
 
-  <head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta charset="utf-8">
-    <title><nyuyokuUsagi></title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>
+        <nyuyokuUsagi>
+    </title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" />
+    <link href="smp.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script>
-    $(function() {
-         $("#header").load("header.html");
-         $("#sclasse").load("sclasse.html");
-         $("#footer").load("footer.html");
-  });
-  </script>
-  </head>
-  
-  <body>
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#sclasse").load("sclasse.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+
     <div id="header"></div>
 
     <div class="game">
-  <div class="game-main">
-    <img src="83690.jpg">
-  </div>
-  
-  <div class="game-text">
-    <img src="83784.jpg">
-    <h4>入浴うさぎ</h4>
-    <p>えー、あー、ふぅん・・・そっかぁ。なんかわたし、急におなか痛くなってきちゃったから帰る。ばいばい。</p>
-    <h5>ばっどえんど２、入浴うさぎはすぐおなかがいたくなるよ</h5>
-    <div class="next">
-      <button><a href="game-1.html">🐰もういっかい🐰</a></button>
+        <div class="game-main">
+            <img src="83690.jpg">
+        </div>
+
+        <div class="game-text">
+            <img src="83784.jpg">
+            <h4>入浴うさぎ</h4>
+            <p>えー、あー、ふぅん・・・そっかぁ。なんかわたし、急におなか痛くなってきちゃったから帰る。ばいばい。</p>
+            <h5>ばっどえんど２、入浴うさぎはすぐおなかがいたくなるよ</h5>
+            <div class="next">
+                <button><a href="game-1.html">🐰もういっかい🐰</a></button>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
 
 
-  <script>
-    window.onload = function(){
-    document.getElementById('name').innerHTML = document.cookie
-} </script>
+    <script>
+        window.onload = function() {
+            document.getElementById('name').innerHTML = document.cookie
+        }
+    </script>
 
-<div id="footer"></div>
-  
+    <div id="footer"></div>
+
 </body>
+
 </html>

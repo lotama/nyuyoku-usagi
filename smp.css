@@ -167,37 +167,58 @@ a:active {
     text-align: center;
 }
 
-.game-start img {
-    width: 450px;
+.bath {
+    margin: auto;
+    padding: 3%;
+    height: auto;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
-    opacity: 0.90;
+}
+
+.bath h1 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.bath p {
+    margin-top: 0.5%;
+}
+
+.game-start img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.game-start {
+    text-align: center;
 }
 
 .game {
-    display: flex;
-    opacity: 0.90;
+    display: inline-block;
+    margin: 0%;
 }
 
 .game-main img {
-    position: relative;
-    background-color: rgb(255, 209, 238);
+    text-align: center;
     border-right: dashed 3px rgb(255, 156, 227);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    width: 450px;
+    border-radius: 30px;
+    width: 100%;
 }
 
 .game-text {
-    position: relative;
+    margin: 0 0;
+    padding: 2px 0;
+    display: block;
     background-color: rgb(250, 209, 238);
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 450px;
-    height: 450px;
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
 }
 
 .game-text img {
-    display: block;
+    display: none;
     border-bottom: dashed 3px rgb(255, 156, 227);
     border-top-right-radius: 30px;
     width: 450px;
@@ -205,24 +226,25 @@ a:active {
 }
 
 .game-text h4 {
-    padding-left: 10px;
+    margin-top: 3%;
+    padding-left: 1em;
 }
 
 .game-text p {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .game-text h5 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
     color: gray;
 }
 
 .next {
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    margin: 2%;
+    right: 0;
 }
 
 .mix iframe {

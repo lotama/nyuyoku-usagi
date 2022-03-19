@@ -2,49 +2,54 @@
 <html>
 
 
-  <head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta charset="utf-8">
-    <title><nyuyokuUsagi></title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>
+        <nyuyokuUsagi>
+    </title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" />
+    <link href="smp.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script>
-    $(function() {
-         $("#header").load("header.html");
-         $("#sclasse").load("sclasse.html");
-         $("#footer").load("footer.html");
-  });
-  </script>
-  </head>
-  
-  <body>
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#sclasse").load("sclasse.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+
     <div id="header"></div>
 
-  <div class="game-start">
-    <img src="83783.jpg">
-  
-    <p>お名前を教えてね</p>
-    <textarea id="name"></textarea>
-    <button onclick="buttonClick()">だよ</button>
-  </div>
+    <div class="game-start">
+        <img src="83783.jpg">
 
-  <script>
-    function buttonClick(){
-    let name = document.getElementById('name').value;
-    
-    if(name === "") {
-    name = "ポワポワ"
-    }
-    document.cookie =name
-    window.location.href = 'game-1.html';}
-  </script>
-  
+        <p>お名前を教えてね</p>
+        <textarea id="name"></textarea>
+        <button onclick="buttonClick()">だよ</button>
+    </div>
 
-  <div id="footer"></div>
-  
+    <script>
+        function buttonClick() {
+            let name = document.getElementById('name').value;
+
+            if (name === "") {
+                name = "ポワポワ"
+            }
+            document.cookie = name
+            window.location.href = 'game-1.html';
+        }
+    </script>
+
+
+    <div id="footer"></div>
+
 </body>
-</html>
 
+</html>

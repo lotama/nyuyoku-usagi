@@ -177,6 +177,24 @@ a:active {
     text-align: center;
 }
 
+.bath {
+    margin: auto;
+    padding: 1%;
+    height: auto;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+}
+
+.bath h1 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.bath p {
+    margin-top: 0.5%;
+}
+
 .game-start img {
     width: 450px;
     border-radius: 30px;
