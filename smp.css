@@ -30,6 +30,7 @@
 body {
     font-family: 'DotGothic16', sans-serif;
     margin-top: 35%;
+    margin-bottom: 10%;
     max-height: 100%;
     background-image: url(bath3.jpeg);
     background-position: center center;
@@ -40,7 +41,7 @@ body {
     /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
     background-attachment: fixed;
     /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-    background-size: cover;
+    background-size: auto;
     /* 背景画像が読み込まれる前に表示される背景のカラー */
     background-color: black
 }
@@ -98,15 +99,11 @@ a:active {
 }
 
 #footer {
-    display: none;
     z-index: 1;
-    position: relative;
+    position: fixed;
+    bottom: 0%;
     width: 100%;
     height: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 240, 249, 0.45);
 }
 
 #footer-logo {
