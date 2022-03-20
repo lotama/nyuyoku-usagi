@@ -198,6 +198,10 @@ a:active {
     margin-top: 0.5%;
 }
 
+.contact {
+    display: none;
+}
+
 .Form {
     margin-top: 1%;
     margin-left: auto;
