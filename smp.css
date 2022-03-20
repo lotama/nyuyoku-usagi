@@ -41,7 +41,7 @@ body {
     /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
     background-attachment: fixed;
     /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-    background-size: auto;
+    background-size: cover;
     /* 背景画像が読み込まれる前に表示される背景のカラー */
     background-color: black
 }
@@ -74,6 +74,7 @@ a:active {
     text-align: center;
     width: 100%;
     height: auto;
+    padding-top: -1%;
     top: 0;
     left: 0;
     right: 0;
@@ -83,18 +84,25 @@ a:active {
 #header-logo {
     height: 10%;
     text-align: center;
-    font-size: auto;
-    margin: 0;
+    font-size: 1em;
+    top: 0;
+}
+
+#header-logo h1 {
+    font-size: 1.5em;
 }
 
 #header-list ul {
-    margin-top: auto;
+    display: inline;
+    margin-top: 1%;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #header-list li {
-    display: inline;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    display: inline-block;
     padding: 1%;
 }
 
@@ -149,6 +157,7 @@ a:active {
 
 .event h3 {
     text-align: center;
+    font-size: 1em;
 }
 
 .news {
@@ -162,6 +171,7 @@ a:active {
 
 .news h3 {
     text-align: center;
+    font-size: 1em;
 }
 
 .bath {
@@ -175,12 +185,84 @@ a:active {
 
 .bath h1 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 0;
 }
 
 .bath p {
+    font-size: 0.8em;
     margin-top: 0.5%;
+}
+
+.Form {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+.Form-Item {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Form-Item-Label {
+    width: 20%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.Form-Item-Label.isMsg {
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.Form-Item-Input {
+    border: 0;
+    border-radius: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: rgba(255, 240, 249, 0.45);
+    font-size: 18px;
+}
+
+.Form-Item-Textarea {
+    border: 0;
+    border-radius: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: rgba(255, 240, 249, 0.45);
+    font-size: 18px;
+}
+
+.Form-Btn {
+    border: 0;
+    border-radius: 30px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 200px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: rgba(255, 240, 249, 0.45);
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .game-start img {

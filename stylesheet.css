@@ -29,7 +29,7 @@
 
 body {
     font-family: 'DotGothic16', sans-serif;
-    margin-top: 10%;
+    margin-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 8%;
@@ -72,35 +72,40 @@ a:active {
 #header {
     z-index: 1;
     position: fixed;
-    height: auto;
+    margin: 0 auto;
     width: 90%;
-    margin: auto;
-    top: 0.5%;
-    right: 1%;
-    left: 1%;
+    height: auto;
+    margin-top: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
 }
 
-#header-logo h3 {
-    margin-top: 3%;
+#header-logo {
+    text-align: center;
+    font-size: 1em;
+    top: 0;
 }
 
-#header-logo {
-    float: left;
-    margin-left: 5%;
-    font-size: 2em;
-    position: absolute;
+#header-logo h1 {
+    font-size: 1.8em;
+    margin: 1% 0 0 0;
 }
 
 #header-list ul {
-    text-align: right;
-    margin-top: 5%;
-    margin-right: 5%;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 0.8em;
 }
 
 #header-list li {
-    display: inline;
+    margin-top: 0%;
+    margin-bottom: 0.5%;
+    display: inline-block;
+    padding: 1%;
 }
 
 #footer {
@@ -113,8 +118,6 @@ a:active {
     bottom: 0.5%;
     right: 1%;
     left: 1%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
 }
 
 #footer-logo {
@@ -163,6 +166,7 @@ a:active {
 
 .event h3 {
     text-align: center;
+    font-size: 1em;
 }
 
 .news {
@@ -171,17 +175,19 @@ a:active {
     width: 300px;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
+    overflow-y: scroll;
 }
 
 .news h3 {
     text-align: center;
+    font-size: 1em;
 }
 
 .bath {
-    margin: auto;
-    padding: 1%;
     height: auto;
-    width: 90%;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
 }
@@ -195,18 +201,105 @@ a:active {
     margin-top: 0.5%;
 }
 
+.contact {
+    display: none;
+}
+
+.Form {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+.Form-Item {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Form-Item-Label {
+    width: 20%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.Form-Item-Label.isMsg {
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.Form-Item-Input {
+    border: 0;
+    border-radius: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: rgba(255, 240, 249, 0.45);
+    font-size: 15px;
+}
+
+.Form-Item-Textarea {
+    border: 0;
+    border-radius: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: rgba(255, 240, 249, 0.45);
+    font-size: 15px;
+}
+
+.Form-Btn {
+    border: 0;
+    border-radius: 30px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 200px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: rgba(255, 240, 249, 0.45);
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.game-start {
+    display: flex;
+}
+
 .game-start img {
     width: 450px;
     border-radius: 30px;
-    opacity: 0.90;
+}
+
+.start-button {
+    padding: 1%;
+    margin: 1%;
+    height: 0%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
 }
 
 .game {
     display: flex;
-    opacity: 0.90;
+    text-align: center;
 }
 
 .game-main img {
+    display: flex;
     position: relative;
     background-color: rgb(255, 209, 238);
     border-right: dashed 3px rgb(255, 156, 227);
@@ -249,8 +342,9 @@ a:active {
 
 .next {
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    text-align: center;
+    right: 3%;
+    bottom: 3%;
 }
 
 .mix iframe {
