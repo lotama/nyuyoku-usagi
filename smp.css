@@ -146,16 +146,7 @@ a:active {
     display: inline-block;
 }
 
-.event {
-    margin: 2% auto;
-    height: 200px;
-    width: 95%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    overflow-y: scroll;
-}
-
-.event h3 {
+.contents1 h3 {
     text-align: center;
     font-size: 1em;
 }
@@ -169,9 +160,22 @@ a:active {
     overflow-y: scroll;
 }
 
-.news h3 {
-    text-align: center;
-    font-size: 1em;
+.event {
+    margin: 2% auto;
+    height: 200px;
+    width: 95%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.zine-top {
+    margin: 2% auto;
+    height: 200px;
+    width: 95%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
+    overflow-y: scroll;
 }
 
 .bath {
@@ -329,4 +333,47 @@ a:active {
 .mix iframe {
     width: 450px;
     position: relative;
+}
+
+.zine {}
+
+.zine-menu {
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 3%;
+    height: 10em;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+}
+
+.zine-main {
+    margin: auto;
+    padding: 3%;
+    height: 40em;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.zine-main h2 {
+    text-align: right;
+    font-size: 0.8em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-bottom: 0%;
+}
+
+.zine-main h3 {
+    text-align: center;
+    font-size: 1em;
+    margin: 2%;
+    padding-bottom: 0%
+}
+
+.zine-main p {
+    font-size: 0.8em;
+    margin-top: 0.5%;
+    margin-bottom: 15%;
 }

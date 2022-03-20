@@ -156,15 +156,7 @@ a:active {
     display: flex;
 }
 
-.event {
-    margin: 1%;
-    height: 300px;
-    width: 300px;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
-}
-
-.event h3 {
+.contents1 h3 {
     text-align: center;
     font-size: 1em;
 }
@@ -178,9 +170,22 @@ a:active {
     overflow-y: scroll;
 }
 
-.news h3 {
-    text-align: center;
-    font-size: 1em;
+.event {
+    margin: 1%;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.zine-top {
+    margin: 1%;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+    overflow-y: scroll;
 }
 
 .bath {
@@ -350,4 +355,38 @@ a:active {
 .mix iframe {
     width: 450px;
     position: relative;
+}
+
+.zine {
+    display: flex;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.zine-menu {
+    width: 30%;
+    margin-right: 1em;
+}
+
+.zine-main {
+    width: 70%;
+}
+
+.zine-main h2 {
+    font-size: 1em;
+}
+
+.zine-main h3 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.zine-main p {
+    margin-top: 0.5%;
+    margin-bottom: 10%;
 }
