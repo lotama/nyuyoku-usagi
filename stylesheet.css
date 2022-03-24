@@ -29,10 +29,10 @@
 
 body {
     font-family: 'DotGothic16', sans-serif;
-    margin-top: 15%;
+    padding-top: 125px;
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 8%;
+    padding-bottom: 50px;
     background-image: url(bath3.jpeg);
     background-position: center center;
     /* 画像を常に天地左右の中央に配置 */
@@ -74,7 +74,7 @@ a:active {
     position: fixed;
     margin: 0 auto;
     width: 90%;
-    height: auto;
+    height: 120px;
     margin-top: 1px;
     top: 0;
     left: 0;
@@ -114,7 +114,7 @@ a:active {
     padding-top: 0%;
     height: 50px;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     bottom: 0.5%;
     right: 1%;
     left: 1%;
@@ -143,6 +143,12 @@ a:active {
 
 .main {
     text-align: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2% 5%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
 }
 
 .main img {
@@ -153,6 +159,7 @@ a:active {
 }
 
 .contents1 {
+    margin: 0 auto;
     display: flex;
 }
 
@@ -167,6 +174,9 @@ a:active {
     width: 300px;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
+    text-align: left;
+    padding-right: 1em;
+    border: solid 1px;
     overflow-y: scroll;
 }
 
@@ -176,6 +186,9 @@ a:active {
     width: 300px;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
+    text-align: left;
+    padding-right: 1em;
+    border: solid 1px;
     overflow-y: scroll;
 }
 
@@ -185,25 +198,27 @@ a:active {
     width: 300px;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
+    text-align: left;
+    padding-right: 1em;
+    border: solid 1px;
     overflow-y: scroll;
 }
 
 .bath {
     height: auto;
     width: 80%;
-    margin: auto;
-    padding: 5%;
-    background-color: rgba(255, 240, 249, 0.45);
+    margin: 2% auto;
+    padding: 1%;
     border-radius: 30px;
+    border: solid 1px;
 }
 
 .bath h1 {
-    font-size: 1.2em;
-    margin-bottom: 0;
+    font-size: 1em;
 }
 
 .bath p {
-    margin-top: 0.5%;
+    text-align: left;
 }
 
 .contact {
@@ -300,7 +315,6 @@ a:active {
 
 .game {
     display: flex;
-    text-align: center;
 }
 
 .game-main img {
@@ -342,6 +356,7 @@ a:active {
 .game-text h5 {
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 0%;
     color: gray;
 }
 
@@ -349,7 +364,7 @@ a:active {
     position: absolute;
     text-align: center;
     right: 3%;
-    bottom: 3%;
+    bottom: 2%;
 }
 
 .mix iframe {
@@ -357,27 +372,71 @@ a:active {
     position: relative;
 }
 
-.zine {
+.party {
     display: flex;
-    height: auto;
     width: 80%;
-    margin: auto;
+    height: 100%;
+    margin: 0 auto;
     padding: 5%;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
+}
+
+.party-menu {
+    width: 30%;
+    height: 70%;
+    margin-right: 5%;
+    border: solid 1px;
     overflow-y: scroll;
+}
+
+.party-main {
+    margin-right: 0;
+    width: 70%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.party-main img {
+    width: 70%;
+}
+
+.party-main h3 {
+    border-top: solid 1px;
+    font-size: 1.2em;
+}
+
+.party-main p {
+    margin-top: 0.5%;
+    margin-bottom: 10%;
+}
+
+.zine {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
 }
 
 .zine-menu {
     width: 30%;
-    margin-right: 1em;
+    height: 70%;
+    margin-right: 5%;
+    border: solid 1px;
+    overflow-y: scroll;
 }
 
 .zine-main {
     width: 70%;
+    height: 500px;
+    overflow-y: scroll;
 }
 
 .zine-main h2 {
+    border-top: solid 1px;
     font-size: 1em;
 }
 

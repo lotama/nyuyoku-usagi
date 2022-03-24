@@ -29,9 +29,10 @@
 
 body {
     font-family: 'DotGothic16', sans-serif;
-    margin-top: 35%;
-    margin-bottom: 10%;
-    max-height: 100%;
+    margin-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 8%;
     background-image: url(bath3.jpeg);
     background-position: center center;
     /* 画像を常に天地左右の中央に配置 */
@@ -71,37 +72,38 @@ a:active {
 #header {
     z-index: 1;
     position: fixed;
-    text-align: center;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     height: auto;
-    padding-top: -1%;
+    margin-top: 1px;
     top: 0;
     left: 0;
     right: 0;
     background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
 }
 
 #header-logo {
-    height: 10%;
     text-align: center;
     font-size: 1em;
     top: 0;
 }
 
 #header-logo h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin: 1% 0 0 0;
 }
 
 #header-list ul {
-    display: inline;
-    margin-top: 1%;
     text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
     font-size: 0.8em;
 }
 
 #header-list li {
     margin-top: 0%;
-    margin-bottom: 1%;
+    margin-bottom: 0.5%;
     display: inline-block;
     padding: 1%;
 }
@@ -109,26 +111,34 @@ a:active {
 #footer {
     z-index: 1;
     position: fixed;
-    bottom: 0%;
-    width: 100%;
-    height: auto;
+    padding-top: 0%;
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    bottom: 0.5%;
+    right: 1%;
+    left: 1%;
 }
 
 #footer-logo {
-    display: none;
     text-align: center;
-    font-size: 1em;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
 }
 
 #footer-list ul {
-    margin: 0%;
-    padding: 0%;
+    position: absolute;
+    top: 0;
+    bottom: 2;
+    right: 10px;
+    margin: auto 0;
+    height: 10px;
 }
 
 #footer-list li {
     float: left;
-    margin: 0%;
-    padding: 1%;
+    padding: 3px;
 }
 
 .main {
@@ -137,13 +147,13 @@ a:active {
 
 .main img {
     padding: 1%;
-    width: 80%;
+    height: 400px;
     opacity: 0.90;
     border-radius: 30px;
 }
 
 .contents1 {
-    display: inline-block;
+    display: flex;
 }
 
 .contents1 h3 {
@@ -152,49 +162,47 @@ a:active {
 }
 
 .news {
-    margin: 2% auto;
-    height: 200px;
-    width: 95%;
+    margin: 1%;
+    height: 300px;
+    width: 300px;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
+    border-radius: 30px;
     overflow-y: scroll;
 }
 
 .event {
-    margin: 2% auto;
-    height: 200px;
-    width: 95%;
+    margin: 1%;
+    height: 300px;
+    width: 300px;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
+    border-radius: 30px;
     overflow-y: scroll;
 }
 
 .zine-top {
-    margin: 2% auto;
-    height: 200px;
-    width: 95%;
+    margin: 1%;
+    height: 300px;
+    width: 300px;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
+    border-radius: 30px;
     overflow-y: scroll;
 }
 
 .bath {
-    margin: auto;
-    padding: 3%;
     height: auto;
-    width: 90%;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
 }
 
 .bath h1 {
-    text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 0;
 }
 
 .bath p {
-    font-size: 0.8em;
     margin-top: 0.5%;
 }
 
@@ -240,7 +248,7 @@ a:active {
     width: 100%;
     max-width: 410px;
     background: rgba(255, 240, 249, 0.45);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .Form-Item-Textarea {
@@ -253,7 +261,7 @@ a:active {
     width: 100%;
     max-width: 410px;
     background: rgba(255, 240, 249, 0.45);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .Form-Btn {
@@ -273,39 +281,48 @@ a:active {
     font-size: 1em;
 }
 
+.game-start {
+    display: flex;
+}
+
 .game-start img {
-    width: 100%;
+    width: 450px;
     border-radius: 30px;
 }
 
-.game-start {
-    text-align: center;
+.start-button {
+    padding: 1%;
+    margin: 1%;
+    height: 0%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
 }
 
 .game {
-    display: inline-block;
-    margin: 0%;
+    display: flex;
 }
 
 .game-main img {
-    text-align: center;
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 209, 238);
     border-right: dashed 3px rgb(255, 156, 227);
-    border-radius: 30px;
-    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 450px;
 }
 
 .game-text {
-    margin: 0 0;
-    padding: 2px 0;
-    display: block;
+    position: relative;
     background-color: rgb(250, 209, 238);
-    border-radius: 30px;
-    width: 100%;
-    height: auto;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 450px;
+    height: 450px;
 }
 
 .game-text img {
-    display: none;
+    display: block;
     border-bottom: dashed 3px rgb(255, 156, 227);
     border-top-right-radius: 30px;
     width: 450px;
@@ -313,25 +330,26 @@ a:active {
 }
 
 .game-text h4 {
-    margin-top: 3%;
-    padding-left: 1em;
+    padding-left: 10px;
 }
 
 .game-text p {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .game-text h5 {
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0%;
     color: gray;
 }
 
 .next {
     position: absolute;
-    margin: 2%;
-    right: 0;
+    text-align: center;
+    right: 3%;
+    bottom: 2%;
 }
 
 .mix iframe {
@@ -339,45 +357,73 @@ a:active {
     position: relative;
 }
 
-.zine {}
-
-.zine-menu {
-    margin: auto;
-    margin-bottom: 3%;
-    padding: 3%;
-    height: 10em;
-    width: 90%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
-}
-
-.zine-main {
-    margin: auto;
-    padding: 3%;
-    height: 40em;
-    width: 90%;
+.party {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5%;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
     overflow-y: scroll;
 }
 
+.party-menu {
+    width: 30%;
+}
+
+.paty-main {
+    margin-right: 0;
+    width: 70%;
+}
+
+.party-main img {
+    width: 70%;
+}
+
+.paty-main h2 {
+    font-size: 1em;
+}
+
+.paty-main h3 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.paty-main p {
+    margin-top: 0.5%;
+    margin-bottom: 10%;
+}
+
+.zine {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.zine-menu {
+    width: 30%;
+}
+
+.zine-main {
+    width: 70%;
+}
+
 .zine-main h2 {
-    text-align: right;
-    font-size: 0.8em;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding-bottom: 0%;
+    font-size: 1em;
 }
 
 .zine-main h3 {
-    text-align: center;
-    font-size: 1em;
-    margin: 2%;
-    padding-bottom: 0%
+    font-size: 1.2em;
+    margin-bottom: 0;
 }
 
 .zine-main p {
-    font-size: 0.8em;
     margin-top: 0.5%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
