@@ -68,6 +68,15 @@ a:active {
     color: inherit;
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
 #header {
     z-index: 1;
     position: fixed;
@@ -188,7 +197,7 @@ a:active {
     height: auto;
     width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .bath h1 {
@@ -247,7 +256,7 @@ a:active {
 
 .Form-Item-Textarea {
     border: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     padding-left: 1em;
     padding-right: 1em;
     height: 216px;
@@ -277,7 +286,7 @@ a:active {
 
 .game-start img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .game-start {
@@ -292,7 +301,7 @@ a:active {
 .game-main img {
     text-align: center;
     border-right: dashed 3px rgb(255, 156, 227);
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100%;
 }
 
@@ -301,7 +310,7 @@ a:active {
     padding: 2px 0;
     display: block;
     background-color: rgb(250, 209, 238);
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100%;
     height: auto;
 }
@@ -309,7 +318,7 @@ a:active {
 .game-text img {
     display: none;
     border-bottom: dashed 3px rgb(255, 156, 227);
-    border-top-right-radius: 30px;
+    border-top-right-radius: 20px;
     width: 450px;
     height: 255px;
 }
@@ -343,7 +352,7 @@ a:active {
     height: auto;
     width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 0.8em;
     text-align: center;
 }
@@ -366,7 +375,7 @@ a:active {
     height: 10em;
     width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
     border: solid 1px;
 }
 
@@ -376,7 +385,7 @@ a:active {
     height: 40em;
     width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
     overflow-y: scroll;
 }
 
@@ -414,7 +423,7 @@ a:active {
     height: 10em;
     width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
     border: solid 1px;
 }
 
@@ -424,7 +433,7 @@ a:active {
     height: 40em;
     width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
     overflow-y: scroll;
 }
 
