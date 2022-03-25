@@ -340,7 +340,7 @@ a:active {
 }
 
 .next {
-    position: absolute;
+    position: relative;
     margin: 2%;
     right: 0;
 }
