@@ -460,14 +460,14 @@ a:active {
 .zine-main h2 {
     border-top: solid 1px;
     font-size: 1em;
+    text-align: right;
+    margin-right: 3%;
 }
 
 .zine-main h3 {
     font-size: 1.2em;
-    margin-bottom: 0;
 }
 
 .zine-main p {
-    margin-top: 0.5%;
     margin-bottom: 10%;
 }
