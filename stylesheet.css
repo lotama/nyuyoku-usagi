@@ -29,10 +29,9 @@
 
 body {
     font-family: 'DotGothic16', sans-serif;
-    padding-top: 125px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 50px;
+    margin-top: 35%;
+    margin-bottom: 100px;
+    max-height: 100%;
     background-image: url(bath3.jpeg);
     background-position: center center;
     /* 画像を常に天地左右の中央に配置 */
@@ -70,7 +69,7 @@ a:active {
 }
 
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 2px;
     height: 1px;
 }
 
@@ -81,38 +80,37 @@ a:active {
 #header {
     z-index: 1;
     position: fixed;
-    margin: 0 auto;
-    width: 90%;
-    height: 120px;
-    margin-top: 1px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: -1%;
     top: 0;
     left: 0;
     right: 0;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
 }
 
 #header-logo {
+    height: 10%;
     text-align: center;
     font-size: 1em;
     top: 0;
 }
 
 #header-logo h1 {
-    font-size: 1.8em;
-    margin: 1% 0 0 0;
+    font-size: 1.5em;
 }
 
 #header-list ul {
+    display: inline;
+    margin-top: 1%;
     text-align: center;
-    margin-top: 0%;
-    margin-bottom: 0%;
     font-size: 0.8em;
 }
 
 #header-list li {
     margin-top: 0%;
-    margin-bottom: 0.5%;
+    margin-bottom: 1%;
     display: inline-block;
     padding: 1%;
 }
@@ -120,61 +118,40 @@ a:active {
 #footer {
     z-index: 1;
     position: fixed;
-    padding-top: 0%;
-    height: 50px;
-    width: 90%;
-    margin: 0 auto;
-    bottom: 0.5%;
-    right: 1%;
-    left: 1%;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
 }
 
 #footer-logo {
+    display: none;
     text-align: center;
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
+    font-size: 1em;
 }
 
 #footer-list ul {
-    position: absolute;
-    top: 0;
-    bottom: 2;
-    right: 10px;
-    margin: auto 0;
-    height: 10px;
+    margin: 0%;
+    padding: 0%;
 }
 
 #footer-list li {
     float: left;
-    padding: 3px;
+    margin: 0%;
+    padding: 1%;
 }
 
 .main {
     text-align: center;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 2% 5%;
-    background-color: rgba(255, 240, 249, 0.5);
-    border-radius: 30px;
 }
 
 .main img {
     padding: 1%;
-    height: 400px;
-    opacity: 0.90;
+    width: 80%;
     border-radius: 30px;
 }
 
 .contents1 {
-    margin: 0 auto;
-    display: flex;
-}
-
-.contents1 img {
-    height: 1em;
-    margin: 0;
+    display: inline-block;
 }
 
 .contents1 h3 {
@@ -183,48 +160,47 @@ a:active {
 }
 
 .news {
-    margin: 1%;
+    margin: 2% auto;
     height: 300px;
-    width: 300px;
-    border-radius: 30px;
+    width: 95%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
+    font-size: 0.9em;
     text-align: left;
-    padding-right: 1em;
-    border: solid 1px;
     overflow-y: scroll;
 }
 
 .event {
-    margin: 1%;
-    height: 300px;
-    width: 300px;
-    border-radius: 30px;
+    margin: 2% auto;
+    height: 200px;
+    width: 95%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
     text-align: left;
-    padding-right: 1em;
-    border: solid 1px;
     overflow-y: scroll;
 }
 
 .zine-top {
-    margin: 1%;
-    height: 300px;
-    width: 300px;
-    border-radius: 30px;
+    margin: 2% auto;
+    height: 200px;
+    width: 95%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
     text-align: left;
-    padding-right: 1em;
-    border: solid 1px;
     overflow-y: scroll;
 }
 
 .bath {
+    margin: auto;
+    padding: 3%;
     height: auto;
-    width: 80%;
-    margin: 2% auto;
-    padding: 1%;
-    border-radius: 30px;
-    border: solid 1px;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
 }
 
 .bath h1 {
+    text-align: center;
     font-size: 1em;
 }
 
@@ -274,12 +250,12 @@ a:active {
     width: 100%;
     max-width: 410px;
     background: rgba(255, 240, 249, 0.45);
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .Form-Item-Textarea {
     border: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     padding-left: 1em;
     padding-right: 1em;
     height: 216px;
@@ -287,7 +263,7 @@ a:active {
     width: 100%;
     max-width: 410px;
     background: rgba(255, 240, 249, 0.45);
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .Form-Btn {
@@ -307,166 +283,190 @@ a:active {
     font-size: 1em;
 }
 
-.game-start {
-    display: flex;
-}
-
 .game-start img {
-    width: 450px;
-    border-radius: 30px;
+    width: 100%;
+    border-radius: 20px;
 }
 
-.start-button {
-    padding: 1%;
-    margin: 1%;
-    height: 0%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+.game-start {
+    text-align: center;
 }
 
 .game {
-    display: flex;
+    display: inline-block;
+    margin: 0%;
 }
 
 .game-main img {
-    display: flex;
-    position: relative;
-    background-color: rgb(255, 209, 238);
+    text-align: center;
     border-right: dashed 3px rgb(255, 156, 227);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    width: 450px;
+    border-radius: 20px;
+    width: 100%;
 }
 
 .game-text {
-    position: relative;
+    margin: 0 0;
+    padding: 2px 0;
+    display: block;
     background-color: rgb(250, 209, 238);
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 450px;
-    height: 450px;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .game-text img {
-    display: block;
+    display: none;
     border-bottom: dashed 3px rgb(255, 156, 227);
-    border-top-right-radius: 30px;
+    border-top-right-radius: 20px;
     width: 450px;
     height: 255px;
 }
 
 .game-text h4 {
-    padding-left: 10px;
+    margin-top: 3%;
+    padding-left: 1em;
 }
 
 .game-text p {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .game-text h5 {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
     color: gray;
 }
 
 .next {
-    position: absolute;
-    text-align: center;
-    right: 3%;
-    bottom: 2%;
+    position: relative;
+    margin: 2%;
+    right: 0;
+    text-align: right;
 }
 
 .mix {
-    width: 80%;
-    height: 100%;
     margin: auto;
-    padding: 5%;
+    margin-bottom: 3%;
+    padding: 3%;
+    height: auto;
+    width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+    border-radius: 20px;
+    font-size: 0.8em;
     text-align: center;
 }
 
 .mix iframe {
-    width: 50%;
+    width: 100%;
     position: relative;
+    padding-bottom: 3%;
 }
 
-.party {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 5%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
-}
-
-.party-menu {
-    width: 30%;
-    height: 700px;
-    margin-right: 5%;
-    border: solid 1px;
-    overflow-y: scroll;
-}
-
-.party-main {
-    margin-right: 0;
-    width: 70%;
-    height: 700px;
-    overflow-y: scroll;
-}
-
-.party-main img {
-    width: 70%;
-}
-
-.party-main h3 {
-    border-top: solid 1px;
-    font-size: 1.2em;
-}
-
-.party-main p {
-    margin-top: 0.5%;
-    margin-bottom: 10%;
-}
-
-.zine {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 5%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 30px;
+.zine img {
+    width: 100%;
+    text-align: center;
 }
 
 .zine-menu {
-    width: 30%;
-    height: 70%;
-    margin-right: 5%;
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 3%;
+    height: 10em;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
+    font-size: 1em;
     border: solid 1px;
     overflow-y: scroll;
 }
 
 .zine-main {
-    width: 70%;
-    height: 500px;
+    margin: auto;
+    padding: 3%;
+    height: 40em;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
     overflow-y: scroll;
 }
 
 .zine-main h2 {
+    text-align: right;
+    font-size: 0.8em;
+    margin: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-top: solid 1px;
+}
+
+.zine-main h3 {
+    text-align: center;
     font-size: 1em;
+    margin: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.zine-main p {
+    font-size: 0.9em;
+    margin-bottom: 15%;
+}
+
+.party img {
+    width: 100%;
+    text-align: center;
+}
+
+.party-menu {
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 3%;
+    height: 10em;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
+    font-size: 1em;
+    border: solid 1px;
+    overflow-y: scroll;
+}
+
+.party-main {
+    margin: auto;
+    padding: 3%;
+    height: 40em;
+    width: 90%;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.party-main h2 {
+    text-align: right;
+    font-size: 0.8em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-bottom: 0%;
+}
+
+.party-main h3 {
+    text-align: center;
+    font-size: 1em;
+    margin: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid 1px;
+}
+
+.party-main p {
+    font-size: 0.9em;
+    margin-bottom: 15%;
 }
 
 .zine-main h3 {
     font-size: 1.2em;
-    margin-bottom: 0;
 }
 
 .zine-main p {
-    margin-top: 0.5%;
     margin-bottom: 10%;
 }
