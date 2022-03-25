@@ -172,6 +172,11 @@ a:active {
     display: flex;
 }
 
+.contents1 img {
+    height: 1em;
+    margin: 0;
+}
+
 .contents1 h3 {
     text-align: center;
     font-size: 1em;
@@ -400,7 +405,7 @@ a:active {
 
 .party-menu {
     width: 30%;
-    height: 70%;
+    height: 700px;
     margin-right: 5%;
     border: solid 1px;
     overflow-y: scroll;
@@ -409,7 +414,7 @@ a:active {
 .party-main {
     margin-right: 0;
     width: 70%;
-    height: 500px;
+    height: 700px;
     overflow-y: scroll;
 }
 
