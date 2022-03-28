@@ -1,19 +1,187 @@
-<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><meta charset="utf-8"><title><nyuyokuUsagi></title><link href="stylesheet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" /><link href="smp.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" /><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"><script src="//code.jquery.com/jquery-2.2.4.min.js"></script><script>$(function() {
-    $("#header").load("header.html");
-    $("#sclasse").load("sclasse.html");
-    $("#footer").load("footer.html");
+/* ------ 泡（大きいマル）のスタイル ------ */
+
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    /*泡の色・濃さ*/
+    border: thin solid rgba(255, 255, 225, 0.3);
+    /*線の色・濃さ*/
+    border-radius: 8px;
+    /*丸み*/
+    box-shadow: 0 0 1px 1px rgba(255, 255, 225, 0.2);
+    /*泡の光彩（外側）*/
 }
 
-);
-</script></head><body><div id="header"></div><div class="party"><div class="party-menu"><ul><li><a href="party.html#p-0408">2022.04.08 Patio / club bar Crazy</a></li><li><a href="party.html#p-0403">2022.04.03 Revival / OR</a></li><li><a href="party.html#p-0218">2022.02.18 Patio / club bar Crazy</a></li><li><a href="party.html#p-0129">2022.01.29 A HOUSE / AiiRO CAFE</a></li><li><a href="party.html#p-0121">2022.01.21 Patio / club bar Crazy</a></li><li><a href="party.html#p-0108">2022.01.08 鉄鋼うさぎハウス</a></li><li><a href="party.html#p-1230">2021.12.30 Patio / club bar Crazy</a></li><li><a href="party.html#p-1226">2021.12.26 MOTION / Sankeys PENTHOUSE</a></li><li><a href="party.html#p-1217">2021.12.17 HOUSE MUSIC ALL LIFE LONG / CLUB MOVE In SHIGA</a></li><li><a href="party.html#p-1127">2021.11.27 All Good Music Party / club bar Crazy</a></li><li><a href="party.html#p-1119">2021.11.19 Patio / club bar Crazy</a></li><li><a href="party.html#p-1030">2021.10.30 Halloween Party / club bar Crazy</a></li><li><a href="party.html#p-1016">2021.10.16 HOUSE MUSIC ALL LIFE LONG / CLUB MOVE In SHIGA</a></li><li><a href="party.html#p-0711">2021.07.11 入浴うさぎの爆音ごはんの時間 / ええかんじ食堂</a></li><li><a href="party.html#p-0619">2021.06.19 ツキイチチューカカイ レイヴ中華</a></li><li><a href="party.html#p-"></a></li></ul></div><div class="party-main"><h3 id="p-0408">Patio / club bar Crazy</h3><img src="p-0408.jpg"><p>🐰入浴うさぎがHouse Grillaと毎月やっているはうすパーティーです🐰 <br>🐰まじにサイコーなフライヤーは毎度ですがYAMAHAちゃん🐰 <br><br>4/8 Patio / club bar Crazy <br>entrance ¥1000 <br>open 22:00~<br><br>DJ <br>入浴うさぎ <br>House Gorilla <br>daijiro <br>cva beatz </p><h3 id="p-0403">Revival / OR</h3><img src="p-0403.jpg"><p>🐰tanosiina usagoriというdeep houseのユニットで出ます🐰 <br>🐰ディスカウントできるみたいなので、いらっしゃる方はご連絡ください🐰 <br><br>4/3 Revival/OR <br>ENTRANCE 1500円 <br>OPEN 16:00~<br>music:techno.house.nu:disco,
-etc <br><br>LINE UP <br>3F <br>Nao.Ichikawa <br>Toshiaki Coyama <br>Brenna Ryan <br>mi-rai3124 <br>i-sakurai <br>BANANA-CHAN <br>Asami <br><br>2F <br>上-JYOUGE-下 <br>871 <br>meleetime <br>果実 <br>Jukimaru <br>samjim <br>broccoli <br>tanoshiina usagori <br><br>[Resident / Organize] <br>SIGNAL (UNREAL/sammeln / MOTION） </p> <h3 id="p-0218">Patio / club bar Crazy</h3> <img src="p-0218.jpg"> <p></p> <h3 id="p-0129">A HOUSE / AiiRO CAFE</h3> <img src="p-0129.jpeg"> <p></p> <h3 id="p-0121">Patio / club bar Crazy</h3> <img src="p-0121.jpg"> <p></p> <h3 id="p-0108">鉄鋼うさぎハウス</h3> <img src="p-0108.jpg"> <p></p> <h3 id="p-1230">Patio / club bar Crazy</h3> <img src="p-1230.jpg"> <p></p> <h3 id="p-1226">MOTION / Sankeys PENTHOUSE</h3> <img src="p-1226.jpeg"> <p></p> <h3 id="p-1217">HOUSE MUSIC ALL LIFE LONG / CLUB MOVE In SHIGA</h3> <img src="p-1217.jpeg"> <p></p> <h3 id="p-1127">All Good Music Party / club bar Crazy</h3> <img src="p-1127.jpeg"> <p></p> <h3 id="p-1119">Patio / club bar Crazy</h3> <img src="p-1119.jpg"> <p>🐰記念すべきいっかいめのぱてぃおです🐰 <br>🐰フライヤーはYAMAHAちゃん🐰</p> <h3 id="p-1030">Halloween Party / club bar Crazy</h3> <img src="p-1030.jpeg"> <p></p> <h3 id="p-1016">HOUSE MUSIC ALL LIFE LONG / CLUB MOVE In SHIGA</h3> <img src="p-1016-2.jpeg"> <p></p> <h3 id="p-0711">入浴うさぎの爆音ごはんの時間 / ええかんじ食堂</h3> <img src="p-0711.jpeg"> <p></p> <h3 id="p-0619">ツキイチチューカカイ レイヴ中華</h3> <img src="p-0619.png"> <p></p> <div class="share"> <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div> </div> </div> <div id="footer"></div> </body> </html>ght: 1em;
-margin: 0;
 
+/* ------ 光（小さいマル）のスタイル ------ */
+
+.bubble:after {
+    content: "";
+    display: block;
+    height: 3px;
+    /*光の高さ*/
+    width: 3px;
+    /*光の幅*/
+    border-radius: 2px;
+    /*丸み*/
+    background: rgba(255, 255, 255, 0.2)/*光の濃さ*/
 }
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    padding-top: 125px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+    background-image: url(bath3.jpeg);
+    background-position: center center;
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: top 30% center;
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: black
+}
+
+ul {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+li {
+    margin: 1em 0;
+    padding-left: 1em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+#header {
+    z-index: 1;
+    position: fixed;
+    margin: 0 auto;
+    width: 90%;
+    height: 120px;
+    margin-top: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 240, 249, 0.45);
+    border-radius: 30px;
+}
+
+#header-logo {
+    text-align: center;
+    font-size: 1em;
+    top: 0;
+}
+
+#header-logo h1 {
+    font-size: 1.8em;
+    margin: 1% 0 0 0;
+}
+
+#header-list ul {
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 0.8em;
+}
+
+#header-list li {
+    margin-top: 0%;
+    margin-bottom: 0.5%;
+    display: inline-block;
+    padding: 1%;
+}
+
+#footer {
+    z-index: 1;
+    position: fixed;
+    padding-top: 0%;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    bottom: 0.5%;
+    right: 1%;
+    left: 1%;
+}
+
+#footer-logo {
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-list ul {
+    position: absolute;
+    top: 0;
+    bottom: 2;
+    right: 10px;
+    margin: auto 0;
+    height: 10px;
+}
+
+#footer-list li {
+    float: left;
+    padding: 3px;
+}
+
+.main {
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2% 5%;
+    background-color: rgba(255, 240, 249, 0.5);
+    border-radius: 30px;
+}
+
+.main img {
+    padding: 1%;
+    height: 400px;
+    opacity: 0.90;
+    border-radius: 30px;
+}
+
+.contents1 {
+    margin: 0 auto;
+    display: flex;
+}
+
+.contents1 img {
+    height: 1em;
+    margin: 0;
+}
+
 .contents1 h3 {
     text-align: center;
     font-size: 1em;
 }
+
 .news {
     margin: 1%;
     height: 300px;
@@ -24,6 +192,7 @@ margin: 0;
     border: solid 1px;
     overflow-y: scroll;
 }
+
 .event {
     margin: 1%;
     height: 300px;
@@ -34,6 +203,7 @@ margin: 0;
     border: solid 1px;
     overflow-y: scroll;
 }
+
 .zine-top {
     margin: 1%;
     height: 300px;
@@ -44,6 +214,7 @@ margin: 0;
     border: solid 1px;
     overflow-y: scroll;
 }
+
 .bath {
     height: auto;
     width: 80%;
@@ -52,21 +223,26 @@ margin: 0;
     border-radius: 30px;
     border: solid 1px;
 }
+
 .bath h1 {
     font-size: 1em;
 }
+
 .bath p {
     font-size: 0.8em;
 }
+
 .contact {
     display: none;
 }
+
 .Form {
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
     max-width: 720px;
 }
+
 .Form-Item {
     padding-top: 1%;
     padding-bottom: 2%;
@@ -74,6 +250,7 @@ margin: 0;
     display: flex;
     align-items: center;
 }
+
 .Form-Item-Label {
     width: 20%;
     max-width: 248px;
@@ -81,10 +258,12 @@ margin: 0;
     font-weight: bold;
     font-size: 1em;
 }
+
 .Form-Item-Label.isMsg {
     margin-top: 0;
     margin-bottom: auto;
 }
+
 .Form-Item-Input {
     border: 0;
     border-radius: 30px;
@@ -97,6 +276,7 @@ margin: 0;
     background: rgba(255, 240, 249, 0.45);
     font-size: 15px;
 }
+
 .Form-Item-Textarea {
     border: 0;
     border-radius: 30px;
@@ -109,6 +289,7 @@ margin: 0;
     background: rgba(255, 240, 249, 0.45);
     font-size: 15px;
 }
+
 .Form-Btn {
     border: 0;
     border-radius: 30px;
@@ -125,13 +306,16 @@ margin: 0;
     font-weight: bold;
     font-size: 1em;
 }
+
 .game-start {
     display: flex;
 }
+
 .game-start img {
     width: 450px;
     border-radius: 30px;
 }
+
 .start-button {
     padding: 1%;
     margin: 1%;
@@ -139,9 +323,11 @@ margin: 0;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
 }
+
 .game {
     display: flex;
 }
+
 .game-main img {
     display: flex;
     position: relative;
@@ -151,6 +337,7 @@ margin: 0;
     border-bottom-left-radius: 30px;
     width: 450px;
 }
+
 .game-text {
     position: relative;
     background-color: rgb(250, 209, 238);
@@ -159,6 +346,7 @@ margin: 0;
     width: 450px;
     height: 450px;
 }
+
 .game-text img {
     display: block;
     border-bottom: dashed 3px rgb(255, 156, 227);
@@ -166,25 +354,30 @@ margin: 0;
     width: 450px;
     height: 255px;
 }
+
 .game-text h4 {
     padding-left: 10px;
 }
+
 .game-text p {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .game-text h5 {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 0%;
     color: gray;
 }
+
 .next {
     position: absolute;
     text-align: center;
     right: 3%;
     bottom: 2%;
 }
+
 .mix {
     width: 80%;
     height: 100%;
@@ -194,10 +387,12 @@ margin: 0;
     border-radius: 30px;
     text-align: center;
 }
+
 .mix iframe {
     width: 50%;
     position: relative;
 }
+
 .party {
     display: flex;
     width: 80%;
@@ -207,6 +402,7 @@ margin: 0;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
 }
+
 .party-menu {
     width: 30%;
     height: 700px;
@@ -214,23 +410,28 @@ margin: 0;
     border: solid 1px;
     overflow-y: scroll;
 }
+
 .party-main {
     margin-right: 0;
     width: 70%;
     height: 700px;
     overflow-y: scroll;
 }
+
 .party-main img {
     width: 70%;
 }
+
 .party-main h3 {
     border-top: solid 1px;
     font-size: 1.2em;
 }
+
 .party-main p {
     margin-top: 0.5%;
     margin-bottom: 10%;
 }
+
 .zine {
     display: flex;
     width: 80%;
@@ -240,6 +441,7 @@ margin: 0;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 30px;
 }
+
 .zine-menu {
     width: 30%;
     height: 700px;
@@ -247,24 +449,25 @@ margin: 0;
     border: solid 1px;
     overflow-y: scroll;
 }
+
 .zine-main {
     margin-right: 0;
     width: 70%;
     height: 700px;
     overflow-y: scroll;
 }
+
 .zine-main h2 {
     border-top: solid 1px;
     font-size: 1em;
     text-align: right;
     margin-right: 3%;
 }
+
 .zine-main h3 {
     font-size: 1.2em;
 }
+
 .zine-main p {
     margin-bottom: 10%;
-}
-.share {
-    text-align: right;
 }
