@@ -471,3 +471,7 @@ a:active {
 .zine-main p {
     margin-bottom: 10%;
 }
+
+.share {
+    text-align: right;
+}
