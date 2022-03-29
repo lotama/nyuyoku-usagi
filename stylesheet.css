@@ -442,6 +442,10 @@ a:active {
     border-radius: 30px;
 }
 
+.zine img {
+    width: 80%;
+}
+
 .zine-menu {
     width: 30%;
     height: 700px;
