@@ -1,32 +1,120 @@
-<!DOCTYPE html><html><head><!--入浴うさぎサイト解析中のプログラミング上級者のあなた！アドバイスがあったらおしえてね！--><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><title><nyuyokuUsagi></title><link href="stylesheet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" /><link href="smp.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" /><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"><script src="//code.jquery.com/jquery-2.2.4.min.js"></script><script>$(function() {
-    $("#header").load("header.html");
-    $("#sclasse").load("sclasse.html");
-    $("#footer").load("footer.html");
+/* ------ 泡（大きいマル）のスタイル ------ */
+
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    /*泡の色・濃さ*/
+    border: thin solid rgba(255, 255, 225, 0.3);
+    /*線の色・濃さ*/
+    border-radius: 8px;
+    /*丸み*/
+    box-shadow: 0 0 1px 1px rgba(255, 255, 225, 0.2);
+    /*泡の光彩（外側）*/
 }
 
-);
-</script></head><body><div id="header"></div><div class="main"><img src="top2.jpg"><div class="contents1"><div class="event"><h3>おでかけじょうほう</h3><ul><li><a href="party.html#p-0408">2022.04.08 Patio / club bar Crazy</a></li><li><a href="party.html#p-0403">2022.04.03 Revival / OR</a></li><li><a href="party.html#p-0218">2022.02.18 Patio / club bar Crazy</a></li><li><a href="party.html#p-0129">2022.01.29 A HOUSE / AiiRO CAFE</a></li><li><a href="party.html#p-0121">2022.01.21 Patio / club bar Crazy</a></li><li><a href="party.html#p-0108">2022.01.08 鉄鋼うさぎハウス</a></li><li><a href="party.html#p-1230">2021.12.30 Patio / club bar Crazy</a></li><li><a href="party.html#p-1226">2021.12.26 MOTION / Sankeys PENTHOUSE</a></li><li><a href="party.html#p-1217">2021.12.17 HOUSE MUSIC ALL LIFE LONG / CLUB MOVE In SHIGA</a></li><li><a href="party.html#p-1127">2021.11.27 All Good Music Party / club bar Crazy</a></li><li><a href="party.html#p-1119">2021.11.19 Patio / club bar Crazy</a></li><li><a href="party.html#p-1030">2021.10.30 Halloween Party / club bar Crazy</a></li><li><a href="party.html#p-1016">2021.10.16 HOUSE MUSIC ALL LIFE LONG / CLUB MOVE In SHIGA</a></li><li><a href="party.html#p-0711">2021.07.11 入浴うさぎの爆音ごはんの時間 / ええかんじ食堂</a></li><li><a href="party.html#p-0619">2021.06.19 ツキイチチューカカイ レイヴ中華</a></li></ul></div><div class="zine-top"><h3>にゅぅまがじん</h3><ul><li><a href="zine.html#z-2">クッキーをやろう</a></li><li><a href="zine.html#z-1">天才プログラマー入浴うさぎが語る、”最新のAI"の真実</a></li>
- </ul></div><div class="news"><h3>こうしんにっき</h3><ul><li>2022.03.31 でぃじぇい ぺーじを更新じました。</li><li>2022.03.28 あちこちに ついったーしぇあぼたん をつけました。しぇあしてね。</li><li>2022.03.23 おでかけ ぺーじをつくりました。</li><li>2022.03.22 げーむ のれしぽんしぶを調整しました。</li><li>2022.03.19 まがじん ぺーじをつくりました。にゅぅまがじん もつくりました。</li><li>2022.03.19 こんたくとふぉーむを作って失敗しました。reactというプログラミング言語に移行するべきだそうです。せっかく作ったのにかなしいです。</li><li>2022.03.19 スマホ版を作りました。ドトールに来たのでがんばりました。</li><li>2022.03.18 背景に泡と画像を設定しました。テキストボックスも透明にしました。</li><li>2022.03.16 げーむ のレイアウトを調整しました。</li><li>2022.03.15 こうしんにっき をつくりました。</li></ul></div></div><div class="bath"><h1>このサイトについて</h1><p>入浴うさぎがぷろぐらみんぐをがんばるサイトです。このサイトは、入浴うさぎのプログラミングの上達具合と気分で進化します。 <br>トップ画像やPatioフライヤーなどのアートワークはYAMAHAちゃん、プログラミング指導はHouse Gorillaです。ふたりともありがとう🖤</p><br><h1>入浴うさぎについて</h1><p>ハウスという音楽ジャンルのDJをしたり、ZINEを作って売ったりしています。 <br>活動拠点は主に都内、たまに大阪、京都、神戸です。 </p></div></div><div id="footer"></div></body></html>ght: 10%;
-text-align: center;
-font-size: 1em;
-top: 0;
 
+/* ------ 光（小さいマル）のスタイル ------ */
+
+.bubble:after {
+    content: "";
+    display: block;
+    height: 3px;
+    /*光の高さ*/
+    width: 3px;
+    /*光の幅*/
+    border-radius: 2px;
+    /*丸み*/
+    background: rgba(255, 255, 255, 0.2)/*光の濃さ*/
 }
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    margin-top: 35%;
+    margin-bottom: 100px;
+    max-height: 100%;
+    background-image: url(bath3.jpeg);
+    background-position: center center;
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: top 30% center;
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: black
+}
+
+ul {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+li {
+    margin: 1em 0;
+    padding-left: 1em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+#header {
+    z-index: 1;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: -1%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 240, 249, 0.45);
+}
+
+#header-logo {
+    height: 10%;
+    text-align: center;
+    font-size: 1em;
+    top: 0;
+}
+
 #header-logo h1 {
     font-size: 1.5em;
 }
+
 #header-list ul {
     display: inline;
     margin-top: 1%;
     text-align: center;
     font-size: 0.8em;
 }
+
 #header-list li {
     margin-top: 0%;
     margin-bottom: 1%;
     display: inline-block;
     padding: 1%;
 }
+
 #footer {
     z-index: 1;
     position: fixed;
@@ -34,35 +122,43 @@ top: 0;
     width: 100%;
     height: auto;
 }
+
 #footer-logo {
     display: none;
     text-align: center;
     font-size: 1em;
 }
+
 #footer-list ul {
     margin: 0%;
     padding: 0%;
 }
+
 #footer-list li {
     float: left;
     margin: 0%;
     padding: 1%;
 }
+
 .main {
     text-align: center;
 }
+
 .main img {
     padding: 1%;
     width: 95%;
     border-radius: 20px;
 }
+
 .contents1 {
     display: inline-block;
 }
+
 .contents1 h3 {
     text-align: center;
     font-size: 1em;
 }
+
 .news {
     margin: 2% auto;
     height: 300px;
@@ -73,6 +169,7 @@ top: 0;
     text-align: left;
     overflow-y: scroll;
 }
+
 .event {
     margin: 2% auto;
     height: 200px;
@@ -82,6 +179,7 @@ top: 0;
     text-align: left;
     overflow-y: scroll;
 }
+
 .zine-top {
     margin: 2% auto;
     height: 200px;
@@ -91,6 +189,7 @@ top: 0;
     text-align: left;
     overflow-y: scroll;
 }
+
 .bath {
     margin: auto;
     padding: 3%;
@@ -99,15 +198,27 @@ top: 0;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 20px;
 }
+
+.bath h1 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.bath p {
+    font-size: 0.8em;
+}
+
 .contact {
     display: none;
 }
+
 .Form {
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
     max-width: 720px;
 }
+
 .Form-Item {
     padding-top: 1%;
     padding-bottom: 2%;
@@ -115,6 +226,7 @@ top: 0;
     display: flex;
     align-items: center;
 }
+
 .Form-Item-Label {
     width: 20%;
     max-width: 248px;
@@ -122,10 +234,12 @@ top: 0;
     font-weight: bold;
     font-size: 1em;
 }
+
 .Form-Item-Label.isMsg {
     margin-top: 0;
     margin-bottom: auto;
 }
+
 .Form-Item-Input {
     border: 0;
     border-radius: 30px;
@@ -138,6 +252,7 @@ top: 0;
     background: rgba(255, 240, 249, 0.45);
     font-size: 18px;
 }
+
 .Form-Item-Textarea {
     border: 0;
     border-radius: 20px;
@@ -150,6 +265,7 @@ top: 0;
     background: rgba(255, 240, 249, 0.45);
     font-size: 18px;
 }
+
 .Form-Btn {
     border: 0;
     border-radius: 30px;
@@ -166,23 +282,28 @@ top: 0;
     font-weight: bold;
     font-size: 1em;
 }
+
 .game-start img {
     width: 100%;
     border-radius: 20px;
 }
+
 .game-start {
     text-align: center;
 }
+
 .game {
     display: inline-block;
     margin: 0%;
 }
+
 .game-main img {
     text-align: center;
     border-right: dashed 3px rgb(255, 156, 227);
     border-radius: 20px;
     width: 100%;
 }
+
 .game-text {
     margin: 0 0;
     padding: 2px 0;
@@ -192,6 +313,7 @@ top: 0;
     width: 100%;
     height: auto;
 }
+
 .game-text img {
     display: none;
     border-bottom: dashed 3px rgb(255, 156, 227);
@@ -199,25 +321,30 @@ top: 0;
     width: 450px;
     height: 255px;
 }
+
 .game-text h4 {
     margin-top: 3%;
     padding-left: 1em;
 }
+
 .game-text p {
     padding-left: 1em;
     padding-right: 1em;
 }
+
 .game-text h5 {
     padding-left: 1%;
     padding-right: 1%;
     color: gray;
 }
+
 .next {
     position: relative;
     margin: 2%;
     right: 0;
     text-align: right;
 }
+
 .mix {
     margin: auto;
     margin-bottom: 3%;
@@ -229,16 +356,13 @@ top: 0;
     font-size: 0.8em;
     text-align: center;
 }
-.dj iframe {
+
+.mix iframe {
     width: 100%;
     position: relative;
     padding-bottom: 3%;
 }
-.dj img {
-    padding: 1%;
-    width: 95%;
-    border-radius: 20px;
-}
+
 .zine-menu {
     margin: auto;
     margin-bottom: 3%;
@@ -251,6 +375,7 @@ top: 0;
     border: solid 1px;
     overflow-y: scroll;
 }
+
 .zine-main {
     margin: auto;
     padding: 3%;
@@ -260,10 +385,12 @@ top: 0;
     border-radius: 20px;
     overflow-y: scroll;
 }
+
 .zine-main img {
     width: 100%;
     text-align: center;
 }
+
 .zine-main h2 {
     text-align: right;
     font-size: 0.8em;
@@ -272,6 +399,7 @@ top: 0;
     padding-bottom: 2%;
     border-top: solid 1px;
 }
+
 .zine-main h3 {
     text-align: center;
     font-size: 1em;
@@ -279,14 +407,17 @@ top: 0;
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
 .zine-main p {
     font-size: 0.9em;
     margin-bottom: 15%;
 }
+
 .party img {
     width: 100%;
     text-align: center;
 }
+
 .party-menu {
     margin: auto;
     margin-bottom: 3%;
@@ -299,6 +430,7 @@ top: 0;
     border: solid 1px;
     overflow-y: scroll;
 }
+
 .party-main {
     margin: auto;
     padding: 3%;
@@ -308,6 +440,7 @@ top: 0;
     border-radius: 20px;
     overflow-y: scroll;
 }
+
 .party-main h2 {
     text-align: right;
     font-size: 0.8em;
@@ -315,6 +448,7 @@ top: 0;
     margin-bottom: 1%;
     padding-bottom: 0%;
 }
+
 .party-main h3 {
     text-align: center;
     font-size: 1em;
@@ -323,6 +457,7 @@ top: 0;
     padding-bottom: 2%;
     border-top: solid 1px;
 }
+
 .party-main p {
     font-size: 0.9em;
     margin-bottom: 15%;
