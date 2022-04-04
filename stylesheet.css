@@ -435,6 +435,10 @@ p {
     overflow-y: scroll;
 }
 
+.party h1 {
+    border-top: solid 1px;
+}
+
 .party-main img {
     width: 70%;
 }

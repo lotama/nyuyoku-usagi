@@ -77,6 +77,15 @@ a:active {
     background-color: black;
 }
 
+h1 {
+    text-align: center;
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
 #header {
     z-index: 1;
     position: fixed;
@@ -197,15 +206,6 @@ a:active {
     width: 90%;
     background-color: rgba(255, 240, 249, 0.45);
     border-radius: 20px;
-}
-
-.bath h1 {
-    text-align: center;
-    font-size: 1em;
-}
-
-.bath p {
-    font-size: 0.8em;
 }
 
 .contact {
@@ -357,6 +357,11 @@ a:active {
     text-align: center;
 }
 
+.mix img {
+    width: 100%;
+    text-align: center;
+}
+
 .mix iframe {
     width: 100%;
     position: relative;
@@ -400,16 +405,7 @@ a:active {
     border-top: solid 1px;
 }
 
-.zine-main h3 {
-    text-align: center;
-    font-size: 1em;
-    margin: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
 .zine-main p {
-    font-size: 0.9em;
     margin-bottom: 15%;
 }
 
@@ -431,6 +427,10 @@ a:active {
     overflow-y: scroll;
 }
 
+.share {
+    text-align: right;
+}
+
 .party-main {
     margin: auto;
     padding: 3%;
@@ -441,24 +441,10 @@ a:active {
     overflow-y: scroll;
 }
 
-.party-main h2 {
-    text-align: right;
-    font-size: 0.8em;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding-bottom: 0%;
-}
-
-.party-main h3 {
-    text-align: center;
-    font-size: 1em;
-    margin: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+.party h1 {
     border-top: solid 1px;
 }
 
-.party-main p {
-    font-size: 0.9em;
+.party p {
     margin-bottom: 15%;
 }
