@@ -33,7 +33,7 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 50px;
-    background-image: url(top2.jpg);
+    background-image: url(top-4.jpeg);
     background-position: center center;
     /* 画像を常に天地左右の中央に配置 */
     background-position: center;
@@ -220,6 +220,11 @@ p {
     padding-right: 1em;
     border: solid 1px;
     overflow-y: scroll;
+}
+
+.zine img {
+    height: 250px;
+    object-fit: cover;
 }
 
 .bath {
