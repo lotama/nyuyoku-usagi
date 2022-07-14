@@ -1,457 +1,481 @@
-/* ------ 泡（大きいマル）のスタイル ------ */
-
-.bubble {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.1);
-    /*泡の色・濃さ*/
-    border: thin solid rgba(255, 255, 225, 0.3);
-    /*線の色・濃さ*/
-    border-radius: 8px;
-    /*丸み*/
-    box-shadow: 0 0 1px 1px rgba(255, 255, 225, 0.2);
-    /*泡の光彩（外側）*/
-}
-
-
-/* ------ 光（小さいマル）のスタイル ------ */
-
-.bubble:after {
-    content: "";
-    display: block;
-    height: 3px;
-    /*光の高さ*/
-    width: 3px;
-    /*光の幅*/
-    border-radius: 2px;
-    /*丸み*/
-    background: rgba(255, 255, 255, 0.2)/*光の濃さ*/
-}
-
-body {
-    font-family: 'DotGothic16', sans-serif;
-    margin-top: 35%;
-    margin-bottom: 100px;
-    max-height: 100%;
-    background-image: url(top-4.jpeg);
-    background-position: center center;
-    /* 画像を常に天地左右の中央に配置 */
-    background-position: center;
-    /* 画像をタイル状に繰り返し表示しない */
-    background-repeat: no-repeat;
-    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-    background-attachment: fixed;
-    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-    background-size: cover;
-    /* 背景画像が読み込まれる前に表示される背景のカラー */
-    background-color: black
-}
-
-ul {
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-li {
-    margin: 1em 0;
-    padding-left: 1em;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-    color: inherit;
-}
-
-::-webkit-scrollbar {
-    width: 2px;
-    height: 1px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: black;
-}
-
-h1 {
-    text-align: center;
-    font-size: 1em;
-}
-
-p {
-    font-size: 0.8em;
-}
-
-#header {
-    z-index: 1;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    padding-top: -1%;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 240, 249, 0.45);
-}
-
-#header-logo {
-    height: 10%;
-    text-align: center;
-    font-size: 1em;
-    top: 0;
-}
-
-#header-logo h1 {
-    font-size: 1.5em;
-}
-
-#header-list ul {
-    display: inline;
-    margin-top: 1%;
-    text-align: center;
-    font-size: 0.8em;
-}
-
-#header-list li {
-    margin-top: 0%;
-    margin-bottom: 1%;
-    display: inline-block;
-    padding: 1%;
-}
-
-#footer {
-    z-index: 1;
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
-    height: auto;
-}
-
-#footer-logo {
-    display: none;
-    text-align: center;
-    font-size: 1em;
-}
-
-#footer-list ul {
-    margin: 0%;
-    padding: 0%;
-}
-
-#footer-list li {
-    float: left;
-    margin: 0%;
-    padding: 1%;
-}
-
-.main {
-    text-align: center;
-}
-
-.main img {
-    padding: 1%;
-    width: 95%;
-    border-radius: 20px;
-}
-
-.contents1 {
-    display: inline-block;
-}
-
-.contents1 h3 {
-    text-align: center;
-    font-size: 1em;
-}
-
-.news {
-    margin: 2% auto;
-    height: 300px;
-    width: 95%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    font-size: 0.9em;
-    text-align: left;
-    overflow-y: scroll;
-}
-
-.event {
-    margin: 2% auto;
-    height: 200px;
-    width: 95%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    text-align: left;
-    overflow-y: scroll;
-}
-
-.zine-top {
-    margin: 2% auto;
-    height: 200px;
-    width: 95%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    text-align: left;
-    overflow-y: scroll;
-}
-
-.bath {
-    margin: auto;
-    padding: 3%;
-    height: auto;
-    width: 90%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-}
-
-.contact {
-    display: none;
-}
-
-.Form {
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 720px;
-}
-
-.Form-Item {
-    padding-top: 1%;
-    padding-bottom: 2%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.Form-Item-Label {
-    width: 20%;
-    max-width: 248px;
-    letter-spacing: 0.05em;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.Form-Item-Label.isMsg {
-    margin-top: 0;
-    margin-bottom: auto;
-}
-
-.Form-Item-Input {
-    border: 0;
-    border-radius: 30px;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 48px;
-    flex: 1;
-    width: 100%;
-    max-width: 410px;
-    background: rgba(255, 240, 249, 0.45);
-    font-size: 18px;
-}
-
-.Form-Item-Textarea {
-    border: 0;
-    border-radius: 20px;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 216px;
-    flex: 1;
-    width: 100%;
-    max-width: 410px;
-    background: rgba(255, 240, 249, 0.45);
-    font-size: 18px;
-}
-
-.Form-Btn {
-    border: 0;
-    border-radius: 30px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 200px;
-    display: block;
-    letter-spacing: 0.05em;
-    background: rgba(255, 240, 249, 0.45);
-    color: black;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.game-start img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-.game-start {
-    text-align: center;
-}
-
-.game {
-    display: inline-block;
-    margin: 0%;
-}
-
-.game-main img {
-    text-align: center;
-    border-right: dashed 3px rgb(255, 156, 227);
-    border-radius: 20px;
-    width: 100%;
-}
-
-.game-text {
-    margin: 0 0;
-    padding: 2px 0;
-    display: block;
-    background-color: rgb(250, 209, 238);
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-}
-
-.game-text img {
-    display: none;
-    border-bottom: dashed 3px rgb(255, 156, 227);
-    border-top-right-radius: 20px;
-    width: 450px;
-    height: 255px;
-}
-
-.game-text h4 {
-    margin-top: 3%;
-    padding-left: 1em;
-}
-
-.game-text p {
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.game-text h5 {
-    padding-left: 1%;
-    padding-right: 1%;
-    color: gray;
-}
-
-.next {
-    position: relative;
-    margin: 2%;
-    right: 0;
-    text-align: right;
-}
-
-.mix {
-    margin: auto;
-    margin-bottom: 3%;
-    padding: 3%;
-    height: auto;
-    width: 90%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    font-size: 0.8em;
-    text-align: center;
-}
-
-.mix img {
-    width: 100%;
-    text-align: center;
-    height: 30%;
-    object-fit: cover;
-}
-
-.mix iframe {
-    width: 100%;
-    position: relative;
-    padding-bottom: 3%;
-}
-
-.zine-menu {
-    margin: auto;
-    margin-bottom: 3%;
-    padding: 3%;
-    height: 10em;
-    width: 90%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    font-size: 1em;
-    border: solid 1px;
-    overflow-y: scroll;
-}
-
-.zine-main {
-    margin: auto;
-    padding: 3%;
-    height: 40em;
-    width: 90%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    overflow-y: scroll;
-}
-
-.zine-main img {
-    width: 100%;
-    text-align: center;
-}
-
-.zine-main h2 {
-    text-align: right;
-    font-size: 0.8em;
-    margin: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-top: solid 1px;
-}
-
-.zine-main p {
-    margin-bottom: 15%;
-}
-
-.zine img {
-    height: 30%;
-    object-fit: cover;
-}
-
-.party img {
-    width: 100%;
-    text-align: center;
-}
-
-.party-menu {
-    margin: auto;
-    margin-bottom: 3%;
-    padding: 3%;
-    height: 10em;
-    width: 90%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    font-size: 1em;
-    border: solid 1px;
-    overflow-y: scroll;
-}
-
-.share {
-    text-align: right;
-}
-
-.party-main {
-    margin: auto;
-    padding: 3%;
-    height: 40em;
-    width: 90%;
-    background-color: rgba(255, 240, 249, 0.45);
-    border-radius: 20px;
-    overflow-y: scroll;
-}
-
-.party h1 {
-    border-top: solid 1px;
-}
-
-.party p {
-    margin-bottom: 15%;
-}
+    /* ------ 泡（大きいマル）のスタイル ------ */
+    
+    .bubble {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+        /*泡の色・濃さ*/
+        border: thin solid rgba(255, 255, 225, 0.3);
+        /*線の色・濃さ*/
+        border-radius: 8px;
+        /*丸み*/
+        box-shadow: 0 0 1px 1px rgba(255, 255, 225, 0.2);
+        /*泡の光彩（外側）*/
+    }
+    /* ------ 光（小さいマル）のスタイル ------ */
+    
+    .bubble:after {
+        content: "";
+        display: block;
+        height: 3px;
+        /*光の高さ*/
+        width: 3px;
+        /*光の幅*/
+        border-radius: 2px;
+        /*丸み*/
+        background: rgba(255, 255, 255, 0.2)/*光の濃さ*/
+    }
+    
+    body {
+        font-family: 'DotGothic16', sans-serif;
+        margin-top: 35%;
+        margin-bottom: 100px;
+        max-height: 100%;
+        background-image: url(top-4.jpeg);
+        background-position: center center;
+        /* 画像を常に天地左右の中央に配置 */
+        background-position: center;
+        /* 画像をタイル状に繰り返し表示しない */
+        background-repeat: no-repeat;
+        /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+        background-attachment: fixed;
+        /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+        background-size: cover;
+        /* 背景画像が読み込まれる前に表示される背景のカラー */
+        background-color: black
+    }
+    
+    ul {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    li {
+        margin: 1em 0;
+        padding-left: 1em;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+        color: inherit;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 2px;
+        height: 1px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background-color: black;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    p {
+        font-size: 0.8em;
+    }
+    
+    #header {
+        z-index: 1;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding-top: -1%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 240, 249, 0.45);
+    }
+    
+    #header-logo {
+        height: 10%;
+        text-align: center;
+        font-size: 1em;
+        top: 0;
+    }
+    
+    #header-logo h1 {
+        font-size: 1.5em;
+        margin: 0.5em 0 0 0;
+    }
+    
+    #header-list ul {
+        display: inline;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    
+    #header-list li {
+        margin: auto;
+        display: inline-block;
+        padding: 1%;
+    }
+    
+    #header-list p {
+        display: none;
+    }
+    
+    #footer {
+        z-index: 1;
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        height: auto;
+    }
+    
+    #footer-logo {
+        display: none;
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    #footer-list ul {
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    #footer-list li {
+        float: left;
+        margin: 0%;
+        padding: 1%;
+    }
+    
+    .main {
+        text-align: center;
+    }
+    
+    .main img {
+        padding: 1%;
+        width: 95%;
+        border-radius: 20px;
+    }
+    
+    .contents1 {
+        display: inline-block;
+    }
+    
+    .contents1 h3 {
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    .news {
+        margin: auto;
+        height: 300px;
+        width: 95%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        font-size: 0.9em;
+        text-align: left;
+        overflow-y: scroll;
+    }
+    
+    .news li {
+        margin: 3px auto;
+    }
+    
+    .event {
+        margin: auto;
+        height: 200px;
+        width: 95%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        font-size: 0.9em;
+        text-align: left;
+        overflow-y: scroll;
+    }
+    
+    .event li {
+        margin: 3px auto;
+    }
+    
+    .zine-top {
+        margin: 2% auto;
+        height: 200px;
+        width: 95%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        font-size: 0.9em;
+        text-align: left;
+        overflow-y: scroll;
+    }
+    
+    .zine-top li {
+        margin: 3px auto;
+    }
+    
+    .bath {
+        margin: auto;
+        padding: 3%;
+        height: auto;
+        width: 90%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        font-size: 1em;
+    }
+    
+    .contact {
+        display: none;
+    }
+    
+    .Form {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 720px;
+    }
+    
+    .Form-Item {
+        padding-top: 1%;
+        padding-bottom: 2%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .Form-Item-Label {
+        width: 20%;
+        max-width: 248px;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .Form-Item-Label.isMsg {
+        margin-top: 0;
+        margin-bottom: auto;
+    }
+    
+    .Form-Item-Input {
+        border: 0;
+        border-radius: 30px;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 48px;
+        flex: 1;
+        width: 100%;
+        max-width: 410px;
+        background: rgba(255, 240, 249, 0.45);
+        font-size: 18px;
+    }
+    
+    .Form-Item-Textarea {
+        border: 0;
+        border-radius: 20px;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 216px;
+        flex: 1;
+        width: 100%;
+        max-width: 410px;
+        background: rgba(255, 240, 249, 0.45);
+        font-size: 18px;
+    }
+    
+    .Form-Btn {
+        border: 0;
+        border-radius: 30px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 200px;
+        display: block;
+        letter-spacing: 0.05em;
+        background: rgba(255, 240, 249, 0.45);
+        color: black;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .game-start img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .game-start {
+        text-align: center;
+    }
+    
+    .game {
+        display: inline-block;
+        margin: 0%;
+    }
+    
+    .game-main img {
+        text-align: center;
+        border-right: dashed 3px rgb(255, 156, 227);
+        border-radius: 20px;
+        width: 100%;
+    }
+    
+    .game-text {
+        margin: 0 0;
+        padding: 2px 0;
+        display: block;
+        background-color: rgb(250, 209, 238);
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .game-text img {
+        display: none;
+        border-bottom: dashed 3px rgb(255, 156, 227);
+        border-top-right-radius: 20px;
+        width: 450px;
+        height: 255px;
+    }
+    
+    .game-text h4 {
+        margin-top: 3%;
+        padding-left: 1em;
+    }
+    
+    .game-text p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .game-text h5 {
+        padding-left: 1%;
+        padding-right: 1%;
+        color: gray;
+    }
+    
+    .next {
+        position: relative;
+        margin: 2%;
+        right: 0;
+        text-align: right;
+    }
+    
+    .mix {
+        margin: auto;
+        margin-bottom: 3%;
+        padding: 3%;
+        height: auto;
+        width: 90%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    
+    .mix img {
+        width: 100%;
+        text-align: center;
+        height: 30%;
+        object-fit: cover;
+    }
+    
+    .mix iframe {
+        width: 100%;
+        position: relative;
+        padding-bottom: 3%;
+    }
+    
+    .zine-menu {
+        margin: auto;
+        margin-bottom: 3%;
+        padding: 3%;
+        height: 10em;
+        width: 90%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        font-size: 0.9em;
+        border: solid 1px;
+        overflow-y: scroll;
+    }
+    
+    .zine-menu li {
+        margin: 3px auto;
+    }
+    
+    .zine-main {
+        margin: auto;
+        padding: 3%;
+        height: 40em;
+        width: 90%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        overflow-y: scroll;
+    }
+    
+    .zine-main img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .zine-main h2 {
+        text-align: right;
+        font-size: 0.8em;
+        margin: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-top: solid 1px;
+    }
+    
+    .zine-main p {
+        margin-bottom: 15%;
+    }
+    
+    .zine img {
+        height: 30%;
+        object-fit: cover;
+    }
+    
+    .party img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .party-menu {
+        margin: auto;
+        margin-bottom: 3%;
+        padding: 3%;
+        height: 10em;
+        width: 90%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        font-size: 0.9em;
+        border: solid 1px;
+        overflow-y: scroll;
+    }
+    
+    .party-menu li {
+        margin: 3px auto;
+    }
+    
+    .share {
+        text-align: right;
+    }
+    
+    .party-main {
+        margin: auto;
+        padding: 3%;
+        height: 40em;
+        width: 90%;
+        background-color: rgba(255, 240, 249, 0.45);
+        border-radius: 20px;
+        overflow-y: scroll;
+    }
+    
+    .party h1 {
+        border-top: solid 1px;
+    }
+    
+    .party p {
+        margin-bottom: 15%;
+    }

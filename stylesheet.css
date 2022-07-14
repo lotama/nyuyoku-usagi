@@ -125,6 +125,10 @@ p {
     padding: 1%;
 }
 
+#header-list p {
+    margin: auto;
+}
+
 #footer {
     z-index: 1;
     position: fixed;
